@@ -25,11 +25,18 @@ QUEUE_MAX_SIZE = 10
 # Shared queue
 audio_queue = queue.Queue(maxsize=QUEUE_MAX_SIZE)
 
+# Function to format timestamps in a more understandable way
+def format_timestamp(timestamp):
+    """Converts a timestamp into a readable format (HH:MM:SS.sss)."""
+    dt = datetime.fromtimestamp(timestamp)
+    return dt.strftime("%H:%M:%S.%f")[:-3]  # Drop microseconds to milliseconds
+
 # Function to capture audio and transcribe it
 def transcribe_live(duration=5, sample_rate=SAMPLE_RATE):
     print("Recording... Speak now!")
 
     # Record audio for the specified duration
+    timestamp = time.time()
     audio = sd.rec(int(duration * sample_rate), samplerate=sample_rate, channels=1, dtype='float32')
     sd.wait()  # Wait until the recording is complete
 
@@ -37,7 +44,8 @@ def transcribe_live(duration=5, sample_rate=SAMPLE_RATE):
     # audio = (audio * 32767).astype(np.int16)
 
     # Transcribe audio using Whisper
-    print("Transcribing...")
+    formatted_time = format_timestamp(timestamp)
+    print(f"Trascribing {CHUNK_DURATION} second audio chunk recorded at: {formatted_time}")
     result = model.transcribe(audio=audio.flatten(), language="en")
     print("Transcription:", result['text'])
 
@@ -46,17 +54,12 @@ def transcribe_live(duration=5, sample_rate=SAMPLE_RATE):
 # ////////////////////////////////////////////////////
 # Start live transcription (set duration as needed)
 # transcribe_live(duration=5)
-# while True:
-#     transcribe_live(duration=CHUNK_DURATION)
+while True:
+    transcribe_live(duration=CHUNK_DURATION)
 
 
 
 
-
-def format_timestamp(timestamp):
-    """Converts a timestamp into a readable format (HH:MM:SS.sss)."""
-    dt = datetime.fromtimestamp(timestamp)
-    return dt.strftime("%H:%M:%S.%f")[:-3]  # Drop microseconds to milliseconds
 
 def record_audio():
     """Continuously records audio and pushes chunks into the queue."""
@@ -98,17 +101,17 @@ def process_audio():
             except Exception as e:
                 print(f"Error during transcription: {e}")
 
-# Create threads
-recording_thread = threading.Thread(target=record_audio, daemon=True)
-processing_thread = threading.Thread(target=process_audio, daemon=True)
+# # Create threads
+# recording_thread = threading.Thread(target=record_audio, daemon=True)
+# processing_thread = threading.Thread(target=process_audio, daemon=True)
 
-# Start threads
-recording_thread.start()
-processing_thread.start()
+# # Start threads
+# recording_thread.start()
+# processing_thread.start()
 
-# Keep main thread running
-try:
-    while True:
-        pass
-except KeyboardInterrupt:
-    print("Stopping...")
+# # Keep main thread running
+# try:
+#     while True:
+#         pass
+# except KeyboardInterrupt:
+#     print("Stopping...")
