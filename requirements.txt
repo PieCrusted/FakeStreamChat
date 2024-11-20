@@ -1,0 +1,3 @@
+openai-whisper @ git+https://github.com/openai/whisper.git
+sounddevice
+numpy
