@@ -10,11 +10,20 @@ import urllib.request
 ssl._create_default_https_context = ssl._create_unverified_context
 
 # Load the Whisper model
-model = whisper.load_model("base", device="cpu")  # Change to "tiny" if needed
-# model = whisper.load_model("tiny")
+model = whisper.load_model("base.en", device="cpu")  # Change to "tiny" if needed
+# model = whisper.load_model("tiny.en", device="cpu")
+
+# Audio settings
+SAMPLE_RATE = 16000
+CHUNK_DURATION = 5  # seconds
+# TODO: Implment a queue and 2 threads so one continuously produces/records audio, and other process it
+QUEUE_MAX_SIZE = 10 
+
+# Shared queue
+audio_queue = queue.Queue(maxsize=QUEUE_MAX_SIZE)
 
 # Function to capture audio and transcribe it
-def transcribe_live(duration=5, sample_rate=16000):
+def transcribe_live(duration=5, sample_rate=SAMPLE_RATE):
     print("Recording... Speak now!")
 
     # Record audio for the specified duration
@@ -32,4 +41,4 @@ def transcribe_live(duration=5, sample_rate=16000):
 # Start live transcription (set duration as needed)
 # transcribe_live(duration=5)
 while True:
-    transcribe_live(duration=5)
+    transcribe_live(duration=CHUNK_DURATION)
