@@ -22,9 +22,9 @@ Prepare data in ```data/custom``` folder, in json format. Then run either:
 ```bash
   make combine-training-data-test-split 0.3
 ```
-Where the first combines all the jsons in ```data/custom``` to ```data/train.json```
+The first command combines all the jsons in ```data/custom``` to ```data/train.json```
 
-The second and third combines and splits the jsons in ```data/custom``` to ```data/train.json``` and ```data/test.json```. It can take an specified argument between 0 to 1.0, where the argument is denoted as the percentage put into ```data/test.json```.
+The second and third command combines and splits the jsons in ```data/custom``` to ```data/train.json``` and ```data/test.json```. It can take an specified argument between 0 to 1.0, where the argument is denoted as the percentage put into ```data/test.json```.
 
 ## Component Testing
 
