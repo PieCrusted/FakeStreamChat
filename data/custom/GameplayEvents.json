@@ -1,0 +1,2252 @@
+[
+  {
+    "input": "I cast Fireball at the goblins!",
+    "output": [
+      "gg lol",
+      "insanedmgrn!",
+      "ftw carry mom3nt!",
+      "tbh, that was 3pic!"
+    ]
+  },
+  {
+    "input": "Oh no, I rolled a natural 1!",
+    "output": [
+      "tbh, that was epic!",
+      "LUL imagine mizzing that",
+      "u g0t this lmk!",
+      "gglol"
+    ]
+  },
+  {
+    "input": "I persuade the guard to let us pass.",
+    "output": [
+      "ftw carry moment!",
+      "LUL imagine missing that",
+      "insane dmg rn!",
+      "insanedmgrn!"
+    ]
+  },
+  {
+    "input": "I grapple the troll to keep it from attacking.",
+    "output": [
+      "insane dmg rn!",
+      "btw carrymoment!",
+      "tbh, that was epic!",
+      "u got this bruh!"
+    ]
+  },
+  {
+    "input": "I search the room for traps.",
+    "output": [
+      "inzane dmg rn!",
+      "ROFL carry moment!",
+      "Welldone fomo!",
+      "LUL imagine missing that"
+    ]
+  },
+  {
+    "input": "I attack the dragon with my sword.",
+    "output": [
+      "bruh carry moment!",
+      "tbh, that was 3pic!",
+      "ugotthis nvm!",
+      "ikr carry moment!"
+    ]
+  },
+  {
+    "input": "I heal the party with Cure Wounds.",
+    "output": [
+      "Well done rn!",
+      "tbh, that was epic!",
+      "gg lol",
+      "gg lol"
+    ]
+  },
+  {
+    "input": "I sneak past the guards undetected.",
+    "output": [
+      "Well done idk!",
+      "u got this tbh!",
+      "LUL imaginemissingthat",
+      "tbh, thatwasepic!"
+    ]
+  },
+  {
+    "input": "I summon a spectral wolf to aid us.",
+    "output": [
+      "gg lol",
+      "u got this idc!",
+      "gg lol",
+      "stfu amazingplay!"
+    ]
+  },
+  {
+    "input": "I roll to disarm the trap.",
+    "output": [
+      "tbh, that was epic!",
+      "tbh, thatwasepic!",
+      "LUL imagine mizzing that",
+      "smh amazing play!"
+    ]
+  },
+  {
+    "input": "I investigate the strange markings on the wall.",
+    "output": [
+      "insanedmgrn!",
+      "stfu carry moment!",
+      "Welldone idk!",
+      "insane dmg rn!"
+    ]
+  },
+  {
+    "input": "I charge at the bandits head-on.",
+    "output": [
+      "btw amazingplay!",
+      "gg lol",
+      "W3ll don3 idk!",
+      "gg lol"
+    ]
+  },
+  {
+    "input": "I use my turn to cast Shield of Faith.",
+    "output": [
+      "tldr amazingplay!",
+      "W3ll don3 IYKYK!",
+      "gg lol",
+      "u got thiz gg!"
+    ]
+  },
+  {
+    "input": "I drink a health potion.",
+    "output": [
+      "insane dmg rn!",
+      "LUL imagine missing that",
+      "u got this ikr!",
+      "Pog carry mom3nt!"
+    ]
+  },
+  {
+    "input": "I set an ambush for the orcs.",
+    "output": [
+      "Well done wyd!",
+      "LUL imagine mizzing that",
+      "insanedmgrn!",
+      "insane dmg rn!"
+    ]
+  },
+  {
+    "input": "I activate my magical artifact.",
+    "output": [
+      "Well done idc!",
+      "tbh, that was 3pic!",
+      "tbh, that waz epic!",
+      "insan3 dmg rn!"
+    ]
+  },
+  {
+    "input": "I take cover behind the boulder.",
+    "output": [
+      "LUL imagine missing that",
+      "u got this idc!",
+      "tldr carry moment!",
+      "gg lol"
+    ]
+  },
+  {
+    "input": "I check the treasure chest for traps.",
+    "output": [
+      "idc carrymoment!",
+      "tbh, thatwasepic!",
+      "Welldone bruh!",
+      "W3ll don3 rn!"
+    ]
+  },
+  {
+    "input": "I try to climb the wall.",
+    "output": [
+      "W3ll don3 stfu!",
+      "LUL imagin3 missing that",
+      "gg lol",
+      "LUL imagin3 missing that"
+    ]
+  },
+  {
+    "input": "I use my bow to shoot the fleeing enemy.",
+    "output": [
+      "LUL amazingplay!",
+      "ugotthis jk!",
+      "lol amazing play!",
+      "ikr carry mom3nt!"
+    ]
+  },
+  {
+    "input": "I cast Fireball at the goblins!",
+    "output": [
+      "gg lol",
+      "LUL imagine missing that",
+      "gg lol",
+      "gg lol"
+    ]
+  },
+  {
+    "input": "Oh no, I rolled a natural 1!",
+    "output": [
+      "tbh, that was epic!",
+      "Welldone idk!",
+      "tbh, that was epic!",
+      "u got thiz rn!"
+    ]
+  },
+  {
+    "input": "I persuade the guard to let us pass.",
+    "output": [
+      "gg lol",
+      "u got thiz ikr!",
+      "insan3 dmg rn!",
+      "Well done bruh!"
+    ]
+  },
+  {
+    "input": "I grapple the troll to keep it from attacking.",
+    "output": [
+      "LUL imagine missing that",
+      "u got this Pog!",
+      "idk carry mom3nt!",
+      "IYKYK amazing play!"
+    ]
+  },
+  {
+    "input": "I search the room for traps.",
+    "output": [
+      "tbh, thatwasepic!",
+      "LUL imagin3 missing that",
+      "u got thiz fomo!",
+      "gg lol"
+    ]
+  },
+  {
+    "input": "I attack the dragon with my sword.",
+    "output": [
+      "tbh, that waz epic!",
+      "Pog amazing play!",
+      "LUL imagine missing that",
+      "LUL imagine missing that"
+    ]
+  },
+  {
+    "input": "I heal the party with Cure Wounds.",
+    "output": [
+      "ROFL amazingplay!",
+      "Well done stfu!",
+      "LUL imagine missing that",
+      "W3ll don3 rn!"
+    ]
+  },
+  {
+    "input": "I sneak past the guards undetected.",
+    "output": [
+      "nvm amazing play!",
+      "jk amazingplay!",
+      "insane dmg rn!",
+      "LUL imagine mizzing that"
+    ]
+  },
+  {
+    "input": "I summon a spectral wolf to aid us.",
+    "output": [
+      "ugotthis ftw!",
+      "inzane dmg rn!",
+      "LUL imagin3 missing that",
+      "insanedmgrn!"
+    ]
+  },
+  {
+    "input": "I roll to disarm the trap.",
+    "output": [
+      "insane dmg rn!",
+      "gg lol",
+      "fomo amazing play!",
+      "insan3 dmg rn!"
+    ]
+  },
+  {
+    "input": "I investigate the strange markings on the wall.",
+    "output": [
+      "bruh carry m0ment!",
+      "u got this bruh!",
+      "inzane dmg rn!",
+      "inzane dmg rn!"
+    ]
+  },
+  {
+    "input": "I charge at the bandits head-on.",
+    "output": [
+      "Well d0ne ftw!",
+      "ugotthis stfu!",
+      "Welldone Pog!",
+      "LUL imagin3 missing that"
+    ]
+  },
+  {
+    "input": "I use my turn to cast Shield of Faith.",
+    "output": [
+      "gglol",
+      "tbh, that was epic!",
+      "insane dmg rn!",
+      "gglol"
+    ]
+  },
+  {
+    "input": "I drink a health potion.",
+    "output": [
+      "Well done lmk!",
+      "gg lol",
+      "stfu amazing play!",
+      "insane dmg rn!"
+    ]
+  },
+  {
+    "input": "I set an ambush for the orcs.",
+    "output": [
+      "fomo amazing play!",
+      "Well done LUL!",
+      "insanedmgrn!",
+      "inzane dmg rn!"
+    ]
+  },
+  {
+    "input": "I activate my magical artifact.",
+    "output": [
+      "btw carry mom3nt!",
+      "u got thiz idc!",
+      "tbh, that waz epic!",
+      "LUL carry moment!"
+    ]
+  },
+  {
+    "input": "I take cover behind the boulder.",
+    "output": [
+      "gglol",
+      "tldr amazingplay!",
+      "tldr amazing play!",
+      "gg lol"
+    ]
+  },
+  {
+    "input": "I check the treasure chest for traps.",
+    "output": [
+      "LUL imagine missing that",
+      "smh carry moment!",
+      "gg l0l",
+      "inzane dmg rn!"
+    ]
+  },
+  {
+    "input": "I try to climb the wall.",
+    "output": [
+      "nvm carry m0ment!",
+      "LUL imagine missing that",
+      "tbh, that was 3pic!",
+      "stfu amazing play!"
+    ]
+  },
+  {
+    "input": "I use my bow to shoot the fleeing enemy.",
+    "output": [
+      "gg l0l",
+      "gg lol",
+      "u got this jk!",
+      "tbh, that was epic!"
+    ]
+  },
+  {
+    "input": "I cast Fireball at the goblins!",
+    "output": [
+      "tbh, that was 3pic!",
+      "gg lol",
+      "idk amazing play!",
+      "inzane dmg rn!"
+    ]
+  },
+  {
+    "input": "Oh no, I rolled a natural 1!",
+    "output": [
+      "LUL imagine mizzing that",
+      "inzane dmg rn!",
+      "gg l0l",
+      "Well d0ne idc!"
+    ]
+  },
+  {
+    "input": "I persuade the guard to let us pass.",
+    "output": [
+      "insane dmg rn!",
+      "ugotthis lmk!",
+      "tbh, thatwasepic!",
+      "inzane dmg rn!"
+    ]
+  },
+  {
+    "input": "I grapple the troll to keep it from attacking.",
+    "output": [
+      "jk carry moment!",
+      "gg lol",
+      "Well d0ne rn!",
+      "LUL imagine missing that"
+    ]
+  },
+  {
+    "input": "I search the room for traps.",
+    "output": [
+      "idc carry mom3nt!",
+      "idk amazing play!",
+      "ugotthis imo!",
+      "tbh, that was epic!"
+    ]
+  },
+  {
+    "input": "I attack the dragon with my sword.",
+    "output": [
+      "LUL imagine mizzing that",
+      "fomo carry mom3nt!",
+      "gg l0l",
+      "Well done stfu!"
+    ]
+  },
+  {
+    "input": "I heal the party with Cure Wounds.",
+    "output": [
+      "gg lol",
+      "gg lol",
+      "insane dmg rn!",
+      "gglol"
+    ]
+  },
+  {
+    "input": "I sneak past the guards undetected.",
+    "output": [
+      "u got thiz Pog!",
+      "u got this lmk!",
+      "Welldone btw!",
+      "gg lol"
+    ]
+  },
+  {
+    "input": "I summon a spectral wolf to aid us.",
+    "output": [
+      "fomo carry m0ment!",
+      "LUL imaginemissingthat",
+      "insanedmgrn!",
+      "gg l0l"
+    ]
+  },
+  {
+    "input": "I roll to disarm the trap.",
+    "output": [
+      "gg l0l",
+      "LUL imagine missing that",
+      "Well done LUL!",
+      "tbh, that was epic!"
+    ]
+  },
+  {
+    "input": "I investigate the strange markings on the wall.",
+    "output": [
+      "bruh amazing play!",
+      "tbh, that waz epic!",
+      "LUL imaginemissingthat",
+      "gglol"
+    ]
+  },
+  {
+    "input": "I charge at the bandits head-on.",
+    "output": [
+      "Welldone lmao!",
+      "u got thiz stfu!",
+      "u got thiz lmao!",
+      "LUL imagine missing that"
+    ]
+  },
+  {
+    "input": "I use my turn to cast Shield of Faith.",
+    "output": [
+      "insanedmgrn!",
+      "Well d0ne IYKYK!",
+      "tbh, that was 3pic!",
+      "ikr carry mom3nt!"
+    ]
+  },
+  {
+    "input": "I drink a health potion.",
+    "output": [
+      "insanedmgrn!",
+      "LUL imagine mizzing that",
+      "LUL imagine missing that",
+      "gglol"
+    ]
+  },
+  {
+    "input": "I set an ambush for the orcs.",
+    "output": [
+      "tbh, that waz epic!",
+      "rn amazingplay!",
+      "tbh, that was epic!",
+      "Pog amazingplay!"
+    ]
+  },
+  {
+    "input": "I activate my magical artifact.",
+    "output": [
+      "gg carrymoment!",
+      "insane dmg rn!",
+      "ikr amazingplay!",
+      "LUL imagine missing that"
+    ]
+  },
+  {
+    "input": "I take cover behind the boulder.",
+    "output": [
+      "bruh carry moment!",
+      "ROFL amazing play!",
+      "LUL imagine missing that",
+      "LUL imagine mizzing that"
+    ]
+  },
+  {
+    "input": "I check the treasure chest for traps.",
+    "output": [
+      "Well d0ne lmk!",
+      "LUL imagine missing that",
+      "tbh, thatwasepic!",
+      "LUL imagin3 missing that"
+    ]
+  },
+  {
+    "input": "I try to climb the wall.",
+    "output": [
+      "insanedmgrn!",
+      "LUL imaginemissingthat",
+      "tbh, that was epic!",
+      "u got this ROFL!"
+    ]
+  },
+  {
+    "input": "I use my bow to shoot the fleeing enemy.",
+    "output": [
+      "ugotthis fomo!",
+      "LUL imagine missing that",
+      "u got thiz fomo!",
+      "Welldone jk!"
+    ]
+  },
+  {
+    "input": "I cast Fireball at the goblins!",
+    "output": [
+      "LUL imagine missing that",
+      "gg lol",
+      "LUL imaginemissingthat",
+      "imo carry m0ment!"
+    ]
+  },
+  {
+    "input": "Oh no, I rolled a natural 1!",
+    "output": [
+      "gg l0l",
+      "ftw amazing play!",
+      "u g0t this btw!",
+      "insane dmg rn!"
+    ]
+  },
+  {
+    "input": "I persuade the guard to let us pass.",
+    "output": [
+      "insane dmg rn!",
+      "LUL imagine missing that",
+      "insane dmg rn!",
+      "tbh, that was epic!"
+    ]
+  },
+  {
+    "input": "I grapple the troll to keep it from attacking.",
+    "output": [
+      "insane dmg rn!",
+      "u g0t this tbh!",
+      "gg lol",
+      "Well done fomo!"
+    ]
+  },
+  {
+    "input": "I search the room for traps.",
+    "output": [
+      "u g0t this IYKYK!",
+      "tbh, that was epic!",
+      "Well d0ne idk!",
+      "Well d0ne lmk!"
+    ]
+  },
+  {
+    "input": "I attack the dragon with my sword.",
+    "output": [
+      "rn amazing play!",
+      "gg lol",
+      "gg lol",
+      "irl carry moment!"
+    ]
+  },
+  {
+    "input": "I heal the party with Cure Wounds.",
+    "output": [
+      "tbh, that was epic!",
+      "u g0t this jk!",
+      "smh carry moment!",
+      "insane dmg rn!"
+    ]
+  },
+  {
+    "input": "I sneak past the guards undetected.",
+    "output": [
+      "gg lol",
+      "inzane dmg rn!",
+      "LUL imagine mizzing that",
+      "gg l0l"
+    ]
+  },
+  {
+    "input": "I summon a spectral wolf to aid us.",
+    "output": [
+      "imo carrymoment!",
+      "gg l0l",
+      "LUL imagine missing that",
+      "btw amazing play!"
+    ]
+  },
+  {
+    "input": "I roll to disarm the trap.",
+    "output": [
+      "gglol",
+      "btw carrymoment!",
+      "tbh, that was epic!",
+      "btw amazingplay!"
+    ]
+  },
+  {
+    "input": "I investigate the strange markings on the wall.",
+    "output": [
+      "Well done bruh!",
+      "insane dmg rn!",
+      "bruh carry mom3nt!",
+      "gg lol"
+    ]
+  },
+  {
+    "input": "I charge at the bandits head-on.",
+    "output": [
+      "tbh, thatwasepic!",
+      "gglol",
+      "Welldone ftw!",
+      "Welldone idc!"
+    ]
+  },
+  {
+    "input": "I use my turn to cast Shield of Faith.",
+    "output": [
+      "LUL amazing play!",
+      "jk amazing play!",
+      "LUL imagine mizzing that",
+      "gglol"
+    ]
+  },
+  {
+    "input": "I drink a health potion.",
+    "output": [
+      "imo amazingplay!",
+      "btw carry moment!",
+      "LUL imagin3 missing that",
+      "tbh, that was epic!"
+    ]
+  },
+  {
+    "input": "I set an ambush for the orcs.",
+    "output": [
+      "imo carrymoment!",
+      "gglol",
+      "tbh, that was epic!",
+      "LUL imaginemissingthat"
+    ]
+  },
+  {
+    "input": "I activate my magical artifact.",
+    "output": [
+      "tbh, that was epic!",
+      "u got this idc!",
+      "insane dmg rn!",
+      "insane dmg rn!"
+    ]
+  },
+  {
+    "input": "I take cover behind the boulder.",
+    "output": [
+      "gg lol",
+      "IYKYK carry moment!",
+      "btw carry moment!",
+      "LUL imaginemissingthat"
+    ]
+  },
+  {
+    "input": "I check the treasure chest for traps.",
+    "output": [
+      "u g0t this nvm!",
+      "gg lol",
+      "insane dmg rn!",
+      "LUL imagine missing that"
+    ]
+  },
+  {
+    "input": "I try to climb the wall.",
+    "output": [
+      "insan3 dmg rn!",
+      "LUL imagine missing that",
+      "tbh, thatwasepic!",
+      "u got this tldr!"
+    ]
+  },
+  {
+    "input": "I use my bow to shoot the fleeing enemy.",
+    "output": [
+      "idc carrymoment!",
+      "W3ll don3 bruh!",
+      "W3ll don3 wyd!",
+      "tbh, that waz epic!"
+    ]
+  },
+  {
+    "input": "I cast Fireball at the goblins!",
+    "output": [
+      "Pog amazing play!",
+      "LUL imagin3 missing that",
+      "IYKYK amazing play!",
+      "insane dmg rn!"
+    ]
+  },
+  {
+    "input": "Oh no, I rolled a natural 1!",
+    "output": [
+      "gglol",
+      "LUL imagin3 missing that",
+      "gg lol",
+      "tbh, that waz epic!"
+    ]
+  },
+  {
+    "input": "I persuade the guard to let us pass.",
+    "output": [
+      "gglol",
+      "gglol",
+      "insanedmgrn!",
+      "tbh, that was epic!"
+    ]
+  },
+  {
+    "input": "I grapple the troll to keep it from attacking.",
+    "output": [
+      "Well done fomo!",
+      "lmk carrymoment!",
+      "LUL imagine mizzing that",
+      "idc amazingplay!"
+    ]
+  },
+  {
+    "input": "I search the room for traps.",
+    "output": [
+      "Welldone jk!",
+      "lol amazing play!",
+      "lmao amazing play!",
+      "LUL imagine missing that"
+    ]
+  },
+  {
+    "input": "I attack the dragon with my sword.",
+    "output": [
+      "gg amazing play!",
+      "gg l0l",
+      "u got this ROFL!",
+      "LUL imagine mizzing that"
+    ]
+  },
+  {
+    "input": "I heal the party with Cure Wounds.",
+    "output": [
+      "Well done nvm!",
+      "stfu carry moment!",
+      "IYKYK amazing play!",
+      "Well done imo!"
+    ]
+  },
+  {
+    "input": "I sneak past the guards undetected.",
+    "output": [
+      "imo amazing play!",
+      "lmao carrymoment!",
+      "stfu carrymoment!",
+      "Well d0ne btw!"
+    ]
+  },
+  {
+    "input": "I summon a spectral wolf to aid us.",
+    "output": [
+      "Well done lol!",
+      "idc amazing play!",
+      "smh carry mom3nt!",
+      "tbh, that was 3pic!"
+    ]
+  },
+  {
+    "input": "I roll to disarm the trap.",
+    "output": [
+      "lmao amazing play!",
+      "u got thiz fomo!",
+      "W3ll don3 IYKYK!",
+      "idc amazing play!"
+    ]
+  },
+  {
+    "input": "I investigate the strange markings on the wall.",
+    "output": [
+      "inzane dmg rn!",
+      "LUL imaginemissingthat",
+      "tbh, that was 3pic!",
+      "LUL imagine missing that"
+    ]
+  },
+  {
+    "input": "I charge at the bandits head-on.",
+    "output": [
+      "lol carry moment!",
+      "Well done btw!",
+      "W3ll don3 gg!",
+      "LUL imagine missing that"
+    ]
+  },
+  {
+    "input": "I use my turn to cast Shield of Faith.",
+    "output": [
+      "u got this lmao!",
+      "stfu amazing play!",
+      "irl amazing play!",
+      "LUL imaginemissingthat"
+    ]
+  },
+  {
+    "input": "I drink a health potion.",
+    "output": [
+      "LUL imagine mizzing that",
+      "ugotthis lol!",
+      "stfu carrymoment!",
+      "gg l0l"
+    ]
+  },
+  {
+    "input": "I set an ambush for the orcs.",
+    "output": [
+      "tldr amazingplay!",
+      "tbh, that was epic!",
+      "u got this IYKYK!",
+      "LUL imagine mizzing that"
+    ]
+  },
+  {
+    "input": "I activate my magical artifact.",
+    "output": [
+      "u got this imo!",
+      "gg lol",
+      "irl amazing play!",
+      "insan3 dmg rn!"
+    ]
+  },
+  {
+    "input": "I take cover behind the boulder.",
+    "output": [
+      "gg lol",
+      "stfu amazing play!",
+      "imo amazing play!",
+      "tbh, that waz epic!"
+    ]
+  },
+  {
+    "input": "I check the treasure chest for traps.",
+    "output": [
+      "insan3 dmg rn!",
+      "gg lol",
+      "insane dmg rn!",
+      "W3ll don3 stfu!"
+    ]
+  },
+  {
+    "input": "I try to climb the wall.",
+    "output": [
+      "u got thiz imo!",
+      "insane dmg rn!",
+      "LUL imagine missing that",
+      "Well done IYKYK!"
+    ]
+  },
+  {
+    "input": "I use my bow to shoot the fleeing enemy.",
+    "output": [
+      "Well done idc!",
+      "insane dmg rn!",
+      "Pog carrymoment!",
+      "insanedmgrn!"
+    ]
+  },
+  {
+    "input": "I cast Fireball at the goblins!",
+    "output": [
+      "LUL imagine mizzing that",
+      "Well done rn!",
+      "LUL imagine missing that",
+      "tbh, thatwasepic!"
+    ]
+  },
+  {
+    "input": "Oh no, I rolled a natural 1!",
+    "output": [
+      "LUL carrymoment!",
+      "insan3 dmg rn!",
+      "gg lol",
+      "rn carry moment!"
+    ]
+  },
+  {
+    "input": "I persuade the guard to let us pass.",
+    "output": [
+      "ugotthis gg!",
+      "insane dmg rn!",
+      "lol carrymoment!",
+      "tbh, that was 3pic!"
+    ]
+  },
+  {
+    "input": "I grapple the troll to keep it from attacking.",
+    "output": [
+      "insan3 dmg rn!",
+      "gg carry mom3nt!",
+      "u got this ROFL!",
+      "LUL imagine missing that"
+    ]
+  },
+  {
+    "input": "I search the room for traps.",
+    "output": [
+      "tbh, that was epic!",
+      "LUL imagin3 missing that",
+      "Well done smh!",
+      "u got this ftw!"
+    ]
+  },
+  {
+    "input": "I attack the dragon with my sword.",
+    "output": [
+      "tbh, that was epic!",
+      "bruh carry moment!",
+      "rn amazing play!",
+      "tldr carry moment!"
+    ]
+  },
+  {
+    "input": "I heal the party with Cure Wounds.",
+    "output": [
+      "LUL imagine missing that",
+      "imo amazing play!",
+      "tbh, that was 3pic!",
+      "fomo amazing play!"
+    ]
+  },
+  {
+    "input": "I sneak past the guards undetected.",
+    "output": [
+      "W3ll don3 jk!",
+      "smh carry moment!",
+      "ugotthis wyd!",
+      "W3ll don3 ftw!"
+    ]
+  },
+  {
+    "input": "I summon a spectral wolf to aid us.",
+    "output": [
+      "Well d0ne btw!",
+      "gg lol",
+      "LUL imagine missing that",
+      "LUL carrymoment!"
+    ]
+  },
+  {
+    "input": "I roll to disarm the trap.",
+    "output": [
+      "Well done lmao!",
+      "gg lol",
+      "gg l0l",
+      "insane dmg rn!"
+    ]
+  },
+  {
+    "input": "I investigate the strange markings on the wall.",
+    "output": [
+      "LUL amazing play!",
+      "u got this irl!",
+      "gg l0l",
+      "lmk carry moment!"
+    ]
+  },
+  {
+    "input": "I charge at the bandits head-on.",
+    "output": [
+      "u got thiz irl!",
+      "u got this ftw!",
+      "lol carrymoment!",
+      "LUL imagine missing that"
+    ]
+  },
+  {
+    "input": "I use my turn to cast Shield of Faith.",
+    "output": [
+      "u got this Pog!",
+      "LUL imagine missing that",
+      "gg l0l",
+      "nvm carry moment!"
+    ]
+  },
+  {
+    "input": "I drink a health potion.",
+    "output": [
+      "LUL imaginemissingthat",
+      "Well done tldr!",
+      "Well done tldr!",
+      "ftw amazingplay!"
+    ]
+  },
+  {
+    "input": "I set an ambush for the orcs.",
+    "output": [
+      "inzane dmg rn!",
+      "tbh, that was 3pic!",
+      "insane dmg rn!",
+      "tbh amazing play!"
+    ]
+  },
+  {
+    "input": "I activate my magical artifact.",
+    "output": [
+      "insanedmgrn!",
+      "LUL imagin3 missing that",
+      "idc amazing play!",
+      "btw amazingplay!"
+    ]
+  },
+  {
+    "input": "I take cover behind the boulder.",
+    "output": [
+      "inzane dmg rn!",
+      "u got this lol!",
+      "tldr carry moment!",
+      "LUL carry moment!"
+    ]
+  },
+  {
+    "input": "I check the treasure chest for traps.",
+    "output": [
+      "tbh, that was 3pic!",
+      "nvm carry moment!",
+      "rn amazing play!",
+      "irl carry mom3nt!"
+    ]
+  },
+  {
+    "input": "I try to climb the wall.",
+    "output": [
+      "u got this ROFL!",
+      "rn carry m0ment!",
+      "insane dmg rn!",
+      "idc carry m0ment!"
+    ]
+  },
+  {
+    "input": "I use my bow to shoot the fleeing enemy.",
+    "output": [
+      "insane dmg rn!",
+      "tbh, that waz epic!",
+      "inzane dmg rn!",
+      "tbh, that was epic!"
+    ]
+  },
+  {
+    "input": "I cast Fireball at the goblins!",
+    "output": [
+      "bruh amazing play!",
+      "ugotthis fomo!",
+      "LUL imagine missing that",
+      "u g0t this Pog!"
+    ]
+  },
+  {
+    "input": "Oh no, I rolled a natural 1!",
+    "output": [
+      "insane dmg rn!",
+      "insane dmg rn!",
+      "tldr carry mom3nt!",
+      "tbh, that waz epic!"
+    ]
+  },
+  {
+    "input": "I persuade the guard to let us pass.",
+    "output": [
+      "gg lol",
+      "Well d0ne smh!",
+      "ugotthis rn!",
+      "gg lol"
+    ]
+  },
+  {
+    "input": "I grapple the troll to keep it from attacking.",
+    "output": [
+      "Well d0ne stfu!",
+      "idk amazing play!",
+      "W3ll don3 lmk!",
+      "lmk carry moment!"
+    ]
+  },
+  {
+    "input": "I search the room for traps.",
+    "output": [
+      "u got this stfu!",
+      "lol carry mom3nt!",
+      "gg lol",
+      "u got this stfu!"
+    ]
+  },
+  {
+    "input": "I attack the dragon with my sword.",
+    "output": [
+      "bruh carry moment!",
+      "IYKYK carry mom3nt!",
+      "insan3 dmg rn!",
+      "insane dmg rn!"
+    ]
+  },
+  {
+    "input": "I heal the party with Cure Wounds.",
+    "output": [
+      "inzane dmg rn!",
+      "insan3 dmg rn!",
+      "tbh, that waz epic!",
+      "Well done jk!"
+    ]
+  },
+  {
+    "input": "I sneak past the guards undetected.",
+    "output": [
+      "LUL imagine missing that",
+      "lol amazingplay!",
+      "ugotthis ftw!",
+      "btw amazing play!"
+    ]
+  },
+  {
+    "input": "I summon a spectral wolf to aid us.",
+    "output": [
+      "idk carrymoment!",
+      "Well done ROFL!",
+      "bruh carry moment!",
+      "tldr amazing play!"
+    ]
+  },
+  {
+    "input": "I roll to disarm the trap.",
+    "output": [
+      "tbh, thatwasepic!",
+      "ugotthis bruh!",
+      "LUL imagine missing that",
+      "LUL imagine missing that"
+    ]
+  },
+  {
+    "input": "I investigate the strange markings on the wall.",
+    "output": [
+      "LUL imaginemissingthat",
+      "LUL imagine mizzing that",
+      "irl amazing play!",
+      "LUL imagine missing that"
+    ]
+  },
+  {
+    "input": "I charge at the bandits head-on.",
+    "output": [
+      "LUL imagin3 missing that",
+      "gglol",
+      "tbh, that was 3pic!",
+      "tbh, that waz epic!"
+    ]
+  },
+  {
+    "input": "I use my turn to cast Shield of Faith.",
+    "output": [
+      "IYKYK carry moment!",
+      "u g0t this tbh!",
+      "fomo carry m0ment!",
+      "LUL imaginemissingthat"
+    ]
+  },
+  {
+    "input": "I drink a health potion.",
+    "output": [
+      "tbh, that was epic!",
+      "LUL imagine missing that",
+      "rn amazingplay!",
+      "LUL imagin3 missing that"
+    ]
+  },
+  {
+    "input": "I set an ambush for the orcs.",
+    "output": [
+      "Pog carrymoment!",
+      "tbh, that waz epic!",
+      "insanedmgrn!",
+      "gg lol"
+    ]
+  },
+  {
+    "input": "I activate my magical artifact.",
+    "output": [
+      "Welldone LUL!",
+      "LUL imagin3 missing that",
+      "gg l0l",
+      "ikr carry mom3nt!"
+    ]
+  },
+  {
+    "input": "I take cover behind the boulder.",
+    "output": [
+      "smh amazingplay!",
+      "u g0t this ftw!",
+      "LUL imagine missing that",
+      "ugotthis gg!"
+    ]
+  },
+  {
+    "input": "I check the treasure chest for traps.",
+    "output": [
+      "IYKYK amazing play!",
+      "tbh, that waz epic!",
+      "insane dmg rn!",
+      "LUL imagine missing that"
+    ]
+  },
+  {
+    "input": "I try to climb the wall.",
+    "output": [
+      "lol amazing play!",
+      "ftw carry moment!",
+      "u got this imo!",
+      "tbh, that was 3pic!"
+    ]
+  },
+  {
+    "input": "I use my bow to shoot the fleeing enemy.",
+    "output": [
+      "idk amazing play!",
+      "u got this smh!",
+      "Well done ROFL!",
+      "Well d0ne ikr!"
+    ]
+  },
+  {
+    "input": "I cast Fireball at the goblins!",
+    "output": [
+      "gg carrymoment!",
+      "LUL imagin3 missing that",
+      "tbh, that was 3pic!",
+      "nvm carry moment!"
+    ]
+  },
+  {
+    "input": "Oh no, I rolled a natural 1!",
+    "output": [
+      "tbh, that waz epic!",
+      "bruh amazingplay!",
+      "LUL imagin3 missing that",
+      "gglol"
+    ]
+  },
+  {
+    "input": "I persuade the guard to let us pass.",
+    "output": [
+      "gg lol",
+      "tbh, that was 3pic!",
+      "u got this lol!",
+      "LUL imagin3 missing that"
+    ]
+  },
+  {
+    "input": "I grapple the troll to keep it from attacking.",
+    "output": [
+      "LUL imagin3 missing that",
+      "insanedmgrn!",
+      "tbh, that was epic!",
+      "insane dmg rn!"
+    ]
+  },
+  {
+    "input": "I search the room for traps.",
+    "output": [
+      "insanedmgrn!",
+      "ftw carry m0ment!",
+      "tbh, that was 3pic!",
+      "gg lol"
+    ]
+  },
+  {
+    "input": "I attack the dragon with my sword.",
+    "output": [
+      "gglol",
+      "insane dmg rn!",
+      "LUL imagine missing that",
+      "u g0t this imo!"
+    ]
+  },
+  {
+    "input": "I heal the party with Cure Wounds.",
+    "output": [
+      "Well d0ne ROFL!",
+      "inzane dmg rn!",
+      "Well d0ne smh!",
+      "gg lol"
+    ]
+  },
+  {
+    "input": "I sneak past the guards undetected.",
+    "output": [
+      "LUL imagin3 missing that",
+      "gglol",
+      "tbh, that was epic!",
+      "LUL carry moment!"
+    ]
+  },
+  {
+    "input": "I summon a spectral wolf to aid us.",
+    "output": [
+      "LUL imagin3 missing that",
+      "tbh, that was 3pic!",
+      "gglol",
+      "jk carry moment!"
+    ]
+  },
+  {
+    "input": "I roll to disarm the trap.",
+    "output": [
+      "tbh, that was 3pic!",
+      "gg lol",
+      "smh carrymoment!",
+      "LUL imagine missing that"
+    ]
+  },
+  {
+    "input": "I investigate the strange markings on the wall.",
+    "output": [
+      "insane dmg rn!",
+      "gg l0l",
+      "ftw amazingplay!",
+      "stfu amazing play!"
+    ]
+  },
+  {
+    "input": "I charge at the bandits head-on.",
+    "output": [
+      "tbh, that was epic!",
+      "LUL imagine missing that",
+      "btw amazing play!",
+      "insanedmgrn!"
+    ]
+  },
+  {
+    "input": "I use my turn to cast Shield of Faith.",
+    "output": [
+      "LUL imagin3 missing that",
+      "btw amazing play!",
+      "LUL imagine missing that",
+      "W3ll don3 jk!"
+    ]
+  },
+  {
+    "input": "I drink a health potion.",
+    "output": [
+      "gg lol",
+      "Welldone LUL!",
+      "tbh, that waz epic!",
+      "nvm amazingplay!"
+    ]
+  },
+  {
+    "input": "I set an ambush for the orcs.",
+    "output": [
+      "tbh, thatwasepic!",
+      "u g0t this imo!",
+      "btw amazing play!",
+      "LUL imagine mizzing that"
+    ]
+  },
+  {
+    "input": "I activate my magical artifact.",
+    "output": [
+      "tbh, that was epic!",
+      "tbh, that was epic!",
+      "LUL imagine missing that",
+      "LUL imagine missing that"
+    ]
+  },
+  {
+    "input": "I take cover behind the boulder.",
+    "output": [
+      "jk carry moment!",
+      "LUL imagine missing that",
+      "Well done IYKYK!",
+      "tbh, that waz epic!"
+    ]
+  },
+  {
+    "input": "I check the treasure chest for traps.",
+    "output": [
+      "u got this ikr!",
+      "ugotthis stfu!",
+      "tbh, that was 3pic!",
+      "nvm amazing play!"
+    ]
+  },
+  {
+    "input": "I try to climb the wall.",
+    "output": [
+      "Well d0ne LUL!",
+      "ugotthis tbh!",
+      "LUL imagine missing that",
+      "insanedmgrn!"
+    ]
+  },
+  {
+    "input": "I use my bow to shoot the fleeing enemy.",
+    "output": [
+      "insane dmg rn!",
+      "insanedmgrn!",
+      "tbh, thatwasepic!",
+      "Well done lol!"
+    ]
+  },
+  {
+    "input": "I cast Fireball at the goblins!",
+    "output": [
+      "inzane dmg rn!",
+      "idk carry mom3nt!",
+      "Well done IYKYK!",
+      "ugotthis lmk!"
+    ]
+  },
+  {
+    "input": "Oh no, I rolled a natural 1!",
+    "output": [
+      "tbh, that waz epic!",
+      "gg lol",
+      "LUL imagin3 missing that",
+      "u got this tldr!"
+    ]
+  },
+  {
+    "input": "I persuade the guard to let us pass.",
+    "output": [
+      "ugotthis IYKYK!",
+      "stfu carry mom3nt!",
+      "insan3 dmg rn!",
+      "ugotthis imo!"
+    ]
+  },
+  {
+    "input": "I grapple the troll to keep it from attacking.",
+    "output": [
+      "imo amazing play!",
+      "tbh, that was epic!",
+      "idc amazing play!",
+      "irl amazingplay!"
+    ]
+  },
+  {
+    "input": "I search the room for traps.",
+    "output": [
+      "ugotthis bruh!",
+      "insanedmgrn!",
+      "insane dmg rn!",
+      "LUL carry m0ment!"
+    ]
+  },
+  {
+    "input": "I attack the dragon with my sword.",
+    "output": [
+      "tbh, that was 3pic!",
+      "stfu amazing play!",
+      "LUL imagin3 missing that",
+      "u got thiz ikr!"
+    ]
+  },
+  {
+    "input": "I heal the party with Cure Wounds.",
+    "output": [
+      "gg lol",
+      "Well done ikr!",
+      "insane dmg rn!",
+      "LUL imagine missing that"
+    ]
+  },
+  {
+    "input": "I sneak past the guards undetected.",
+    "output": [
+      "Pog carry m0ment!",
+      "LUL imagine missing that",
+      "Well done stfu!",
+      "tbh carry moment!"
+    ]
+  },
+  {
+    "input": "I summon a spectral wolf to aid us.",
+    "output": [
+      "LUL imagine mizzing that",
+      "u g0t this ROFL!",
+      "Pog amazing play!",
+      "insan3 dmg rn!"
+    ]
+  },
+  {
+    "input": "I roll to disarm the trap.",
+    "output": [
+      "insane dmg rn!",
+      "LUL imagin3 missing that",
+      "u got this fomo!",
+      "Well done imo!"
+    ]
+  },
+  {
+    "input": "I investigate the strange markings on the wall.",
+    "output": [
+      "lmao amazingplay!",
+      "tbh, thatwasepic!",
+      "tbh, that was epic!",
+      "ikr carry moment!"
+    ]
+  },
+  {
+    "input": "I charge at the bandits head-on.",
+    "output": [
+      "insan3 dmg rn!",
+      "Well d0ne Pog!",
+      "gg l0l",
+      "btw carry moment!"
+    ]
+  },
+  {
+    "input": "I use my turn to cast Shield of Faith.",
+    "output": [
+      "Well done rn!",
+      "inzane dmg rn!",
+      "u got thiz wyd!",
+      "ftw carry mom3nt!"
+    ]
+  },
+  {
+    "input": "I drink a health potion.",
+    "output": [
+      "lmk carry moment!",
+      "tbh, that was epic!",
+      "gg lol",
+      "tbh carry moment!"
+    ]
+  },
+  {
+    "input": "I set an ambush for the orcs.",
+    "output": [
+      "irl amazing play!",
+      "smh amazing play!",
+      "LUL imagine missing that",
+      "lmk amazing play!"
+    ]
+  },
+  {
+    "input": "I activate my magical artifact.",
+    "output": [
+      "wyd carry mom3nt!",
+      "ftw carrymoment!",
+      "insanedmgrn!",
+      "gglol"
+    ]
+  },
+  {
+    "input": "I take cover behind the boulder.",
+    "output": [
+      "jk carrymoment!",
+      "insanedmgrn!",
+      "ikr amazing play!",
+      "LUL imagin3 missing that"
+    ]
+  },
+  {
+    "input": "I check the treasure chest for traps.",
+    "output": [
+      "rn amazing play!",
+      "inzane dmg rn!",
+      "tbh, that was epic!",
+      "LUL imagin3 missing that"
+    ]
+  },
+  {
+    "input": "I try to climb the wall.",
+    "output": [
+      "u g0t this wyd!",
+      "LUL imagine missing that",
+      "insan3 dmg rn!",
+      "insan3 dmg rn!"
+    ]
+  },
+  {
+    "input": "I use my bow to shoot the fleeing enemy.",
+    "output": [
+      "gg lol",
+      "bruh carrymoment!",
+      "LUL imagine mizzing that",
+      "insan3 dmg rn!"
+    ]
+  },
+  {
+    "input": "I cast Fireball at the goblins!",
+    "output": [
+      "u got thiz bruh!",
+      "LUL imagine missing that",
+      "LUL imagine mizzing that",
+      "Welldone imo!"
+    ]
+  },
+  {
+    "input": "Oh no, I rolled a natural 1!",
+    "output": [
+      "IYKYK amazing play!",
+      "LUL imaginemissingthat",
+      "tbh, that was epic!",
+      "W3ll don3 gg!"
+    ]
+  },
+  {
+    "input": "I persuade the guard to let us pass.",
+    "output": [
+      "insan3 dmg rn!",
+      "W3ll don3 fomo!",
+      "insane dmg rn!",
+      "gg l0l"
+    ]
+  },
+  {
+    "input": "I grapple the troll to keep it from attacking.",
+    "output": [
+      "u g0t this btw!",
+      "idc amazingplay!",
+      "Well d0ne tldr!",
+      "tbh, that was epic!"
+    ]
+  },
+  {
+    "input": "I search the room for traps.",
+    "output": [
+      "u got this rn!",
+      "LUL imagine missing that",
+      "LUL imagine missing that",
+      "insanedmgrn!"
+    ]
+  },
+  {
+    "input": "I attack the dragon with my sword.",
+    "output": [
+      "LUL imaginemissingthat",
+      "insane dmg rn!",
+      "Welldone idk!",
+      "gg l0l"
+    ]
+  },
+  {
+    "input": "I heal the party with Cure Wounds.",
+    "output": [
+      "tbh, that was 3pic!",
+      "insan3 dmg rn!",
+      "gg lol",
+      "gg lol"
+    ]
+  },
+  {
+    "input": "I sneak past the guards undetected.",
+    "output": [
+      "insane dmg rn!",
+      "tbh, thatwasepic!",
+      "tldr carry moment!",
+      "LUL imagine mizzing that"
+    ]
+  },
+  {
+    "input": "I summon a spectral wolf to aid us.",
+    "output": [
+      "ugotthis tldr!",
+      "tbh, that was epic!",
+      "fomo amazing play!",
+      "insanedmgrn!"
+    ]
+  },
+  {
+    "input": "I roll to disarm the trap.",
+    "output": [
+      "tbh, that waz epic!",
+      "imo carry moment!",
+      "fomo amazing play!",
+      "gg l0l"
+    ]
+  },
+  {
+    "input": "I investigate the strange markings on the wall.",
+    "output": [
+      "idk carry moment!",
+      "u got this stfu!",
+      "Well done lmk!",
+      "insanedmgrn!"
+    ]
+  },
+  {
+    "input": "I charge at the bandits head-on.",
+    "output": [
+      "u got this lmk!",
+      "tbh, that was 3pic!",
+      "gglol",
+      "stfu carry mom3nt!"
+    ]
+  },
+  {
+    "input": "I use my turn to cast Shield of Faith.",
+    "output": [
+      "insan3 dmg rn!",
+      "gg lol",
+      "u got this jk!",
+      "LUL imaginemissingthat"
+    ]
+  },
+  {
+    "input": "I drink a health potion.",
+    "output": [
+      "LUL imaginemissingthat",
+      "tbh, that waz epic!",
+      "u got thiz jk!",
+      "tldr carry m0ment!"
+    ]
+  },
+  {
+    "input": "I set an ambush for the orcs.",
+    "output": [
+      "idk amazing play!",
+      "LUL imagine missing that",
+      "u got this btw!",
+      "insan3 dmg rn!"
+    ]
+  },
+  {
+    "input": "I activate my magical artifact.",
+    "output": [
+      "LUL imagine missing that",
+      "insane dmg rn!",
+      "insane dmg rn!",
+      "gg lol"
+    ]
+  },
+  {
+    "input": "I take cover behind the boulder.",
+    "output": [
+      "insan3 dmg rn!",
+      "LUL imagine mizzing that",
+      "LUL imagine missing that",
+      "LUL imaginemissingthat"
+    ]
+  },
+  {
+    "input": "I check the treasure chest for traps.",
+    "output": [
+      "tbh, thatwasepic!",
+      "insanedmgrn!",
+      "LUL imagin3 missing that",
+      "u g0t this gg!"
+    ]
+  },
+  {
+    "input": "I try to climb the wall.",
+    "output": [
+      "tbh, that was epic!",
+      "u got thiz lol!",
+      "inzane dmg rn!",
+      "gg lol"
+    ]
+  },
+  {
+    "input": "I use my bow to shoot the fleeing enemy.",
+    "output": [
+      "LUL imagine missing that",
+      "Well done bruh!",
+      "LUL imaginemissingthat",
+      "tbh, that was epic!"
+    ]
+  },
+  {
+    "input": "I cast Fireball at the goblins!",
+    "output": [
+      "insane dmg rn!",
+      "Welldone ROFL!",
+      "lol amazing play!",
+      "idk carry mom3nt!"
+    ]
+  },
+  {
+    "input": "Oh no, I rolled a natural 1!",
+    "output": [
+      "W3ll don3 idk!",
+      "LUL imagine missing that",
+      "imo carry mom3nt!",
+      "IYKYK carrymoment!"
+    ]
+  },
+  {
+    "input": "I persuade the guard to let us pass.",
+    "output": [
+      "LUL imagine mizzing that",
+      "gg lol",
+      "lol amazing play!",
+      "u got this idk!"
+    ]
+  },
+  {
+    "input": "I grapple the troll to keep it from attacking.",
+    "output": [
+      "LUL imaginemissingthat",
+      "insane dmg rn!",
+      "rn carrymoment!",
+      "inzane dmg rn!"
+    ]
+  },
+  {
+    "input": "I search the room for traps.",
+    "output": [
+      "tbh, that waz epic!",
+      "u got thiz stfu!",
+      "u got this btw!",
+      "gglol"
+    ]
+  },
+  {
+    "input": "I attack the dragon with my sword.",
+    "output": [
+      "insane dmg rn!",
+      "gglol",
+      "Well d0ne rn!",
+      "LUL imagin3 missing that"
+    ]
+  },
+  {
+    "input": "I heal the party with Cure Wounds.",
+    "output": [
+      "gglol",
+      "gg amazing play!",
+      "LUL imagine missing that",
+      "u got this btw!"
+    ]
+  },
+  {
+    "input": "I sneak past the guards undetected.",
+    "output": [
+      "jk carry m0ment!",
+      "tbh, that waz epic!",
+      "W3ll don3 tbh!",
+      "tbh, that waz epic!"
+    ]
+  },
+  {
+    "input": "I summon a spectral wolf to aid us.",
+    "output": [
+      "ROFL amazing play!",
+      "tbh, that was epic!",
+      "insane dmg rn!",
+      "u got thiz wyd!"
+    ]
+  },
+  {
+    "input": "I roll to disarm the trap.",
+    "output": [
+      "tbh, thatwasepic!",
+      "idk carry moment!",
+      "gglol",
+      "ftw amazing play!"
+    ]
+  },
+  {
+    "input": "I investigate the strange markings on the wall.",
+    "output": [
+      "rn amazing play!",
+      "u g0t this tbh!",
+      "insan3 dmg rn!",
+      "gg lol"
+    ]
+  },
+  {
+    "input": "I charge at the bandits head-on.",
+    "output": [
+      "IYKYK carry moment!",
+      "LUL imagine missing that",
+      "u got this wyd!",
+      "Well done tbh!"
+    ]
+  },
+  {
+    "input": "I use my turn to cast Shield of Faith.",
+    "output": [
+      "smh amazing play!",
+      "LUL imagin3 missing that",
+      "inzane dmg rn!",
+      "Well done smh!"
+    ]
+  },
+  {
+    "input": "I drink a health potion.",
+    "output": [
+      "lmao amazing play!",
+      "LUL imagine mizzing that",
+      "LUL imagine missing that",
+      "irl amazingplay!"
+    ]
+  },
+  {
+    "input": "I set an ambush for the orcs.",
+    "output": [
+      "imo amazing play!",
+      "tbh, that was epic!",
+      "ugotthis ftw!",
+      "Well d0ne wyd!"
+    ]
+  },
+  {
+    "input": "I activate my magical artifact.",
+    "output": [
+      "gglol",
+      "gg l0l",
+      "gglol",
+      "Well done idk!"
+    ]
+  },
+  {
+    "input": "I take cover behind the boulder.",
+    "output": [
+      "Welldone lmao!",
+      "LUL imagine mizzing that",
+      "btw carrymoment!",
+      "u g0t this rn!"
+    ]
+  },
+  {
+    "input": "I check the treasure chest for traps.",
+    "output": [
+      "LUL imagine missing that",
+      "idc amazing play!",
+      "tbh, that waz epic!",
+      "gglol"
+    ]
+  },
+  {
+    "input": "I try to climb the wall.",
+    "output": [
+      "insanedmgrn!",
+      "insane dmg rn!",
+      "gg amazing play!",
+      "insanedmgrn!"
+    ]
+  },
+  {
+    "input": "I use my bow to shoot the fleeing enemy.",
+    "output": [
+      "u got this idk!",
+      "gg lol",
+      "tbh, that was epic!",
+      "ROFL amazing play!"
+    ]
+  },
+  {
+    "input": "I cast Fireball at the goblins!",
+    "output": [
+      "ugotthis btw!",
+      "tbh, that was epic!",
+      "lmao amazingplay!",
+      "Well done smh!"
+    ]
+  },
+  {
+    "input": "Oh no, I rolled a natural 1!",
+    "output": [
+      "u got this tldr!",
+      "insane dmg rn!",
+      "LUL imagine missing that",
+      "LUL imaginemissingthat"
+    ]
+  },
+  {
+    "input": "I persuade the guard to let us pass.",
+    "output": [
+      "LUL imagine missing that",
+      "gglol",
+      "LUL imagine missing that",
+      "gglol"
+    ]
+  },
+  {
+    "input": "I grapple the troll to keep it from attacking.",
+    "output": [
+      "bruh amazing play!",
+      "jk carrymoment!",
+      "Well done lmao!",
+      "bruh amazingplay!"
+    ]
+  },
+  {
+    "input": "I search the room for traps.",
+    "output": [
+      "LUL imagine mizzing that",
+      "tbh, that waz epic!",
+      "gg lol",
+      "Pog carry m0ment!"
+    ]
+  },
+  {
+    "input": "I attack the dragon with my sword.",
+    "output": [
+      "LUL imagin3 missing that",
+      "gg lol",
+      "u g0t this LUL!",
+      "u got this jk!"
+    ]
+  },
+  {
+    "input": "I heal the party with Cure Wounds.",
+    "output": [
+      "lmk amazing play!",
+      "gg l0l",
+      "ikr amazing play!",
+      "idc carry moment!"
+    ]
+  },
+  {
+    "input": "I sneak past the guards undetected.",
+    "output": [
+      "imo carry moment!",
+      "tbh, that was 3pic!",
+      "ftw amazing play!",
+      "LUL imagine missing that"
+    ]
+  },
+  {
+    "input": "I summon a spectral wolf to aid us.",
+    "output": [
+      "gg l0l",
+      "Pog amazing play!",
+      "ftw carry moment!",
+      "Well d0ne ikr!"
+    ]
+  },
+  {
+    "input": "I roll to disarm the trap.",
+    "output": [
+      "u g0t this LUL!",
+      "IYKYK carry mom3nt!",
+      "gglol",
+      "u g0t this gg!"
+    ]
+  },
+  {
+    "input": "I investigate the strange markings on the wall.",
+    "output": [
+      "jk amazing play!",
+      "u got this tbh!",
+      "stfu amazing play!",
+      "tbh, that was epic!"
+    ]
+  },
+  {
+    "input": "I charge at the bandits head-on.",
+    "output": [
+      "IYKYK amazing play!",
+      "insan3 dmg rn!",
+      "gg lol",
+      "insane dmg rn!"
+    ]
+  },
+  {
+    "input": "I use my turn to cast Shield of Faith.",
+    "output": [
+      "lmk amazing play!",
+      "lol amazing play!",
+      "idk amazing play!",
+      "Well done irl!"
+    ]
+  },
+  {
+    "input": "I drink a health potion.",
+    "output": [
+      "LUL imaginemissingthat",
+      "u got thiz btw!",
+      "u g0t this fomo!",
+      "u got this ikr!"
+    ]
+  },
+  {
+    "input": "I set an ambush for the orcs.",
+    "output": [
+      "tbh, that was 3pic!",
+      "LUL imagin3 missing that",
+      "insane dmg rn!",
+      "gg lol"
+    ]
+  },
+  {
+    "input": "I activate my magical artifact.",
+    "output": [
+      "gg lol",
+      "LUL imagin3 missing that",
+      "fomo amazingplay!",
+      "tbh amazing play!"
+    ]
+  },
+  {
+    "input": "I take cover behind the boulder.",
+    "output": [
+      "nvm carrymoment!",
+      "gg amazing play!",
+      "insane dmg rn!",
+      "LUL imagin3 missing that"
+    ]
+  },
+  {
+    "input": "I check the treasure chest for traps.",
+    "output": [
+      "LUL imagine missing that",
+      "insanedmgrn!",
+      "LUL imagin3 missing that",
+      "gg lol"
+    ]
+  },
+  {
+    "input": "I try to climb the wall.",
+    "output": [
+      "tbh, that was epic!",
+      "gg amazing play!",
+      "gg amazing play!",
+      "gg lol"
+    ]
+  },
+  {
+    "input": "I use my bow to shoot the fleeing enemy.",
+    "output": [
+      "LUL imagine mizzing that",
+      "gg l0l",
+      "u got this idk!",
+      "inzane dmg rn!"
+    ]
+  },
+  {
+    "input": "I try to climb the wall.",
+    "output": [
+      "gg lol",
+      "LUL imaginemissingthat",
+      "stfu carrymoment!",
+      "W3ll don3 tldr!"
+    ]
+  },
+  {
+    "input": "I heal the party with Cure Wounds.",
+    "output": [
+      "inzane dmg rn!",
+      "Well d0ne bruh!",
+      "Welldone bruh!",
+      "IYKYK amazing play!"
+    ]
+  },
+  {
+    "input": "I cast Fireball at the goblins!",
+    "output": [
+      "insane dmg rn!",
+      "Well done LUL!",
+      "Welldone rn!",
+      "ROFL carrymoment!"
+    ]
+  },
+  {
+    "input": "I activate my magical artifact.",
+    "output": [
+      "inzane dmg rn!",
+      "tbh, thatwasepic!",
+      "u got this lmk!",
+      "gg lol"
+    ]
+  },
+  {
+    "input": "I check the treasure chest for traps.",
+    "output": [
+      "tbh, that was epic!",
+      "LUL imagine missing that",
+      "rn amazing play!",
+      "insanedmgrn!"
+    ]
+  },
+  {
+    "input": "Oh no, I rolled a natural 1!",
+    "output": [
+      "tbh, thatwasepic!",
+      "smh amazing play!",
+      "ikr amazingplay!",
+      "gg l0l"
+    ]
+  },
+  {
+    "input": "I take cover behind the boulder.",
+    "output": [
+      "IYKYK carry m0ment!",
+      "Pog carry mom3nt!",
+      "tbh, thatwasepic!",
+      "LUL imagine missing that"
+    ]
+  },
+  {
+    "input": "I use my turn to cast Shield of Faith.",
+    "output": [
+      "ugotthis stfu!",
+      "Well done gg!",
+      "imo amazing play!",
+      "u got thiz tldr!"
+    ]
+  },
+  {
+    "input": "I use my bow to shoot the fleeing enemy.",
+    "output": [
+      "W3ll don3 IYKYK!",
+      "ugotthis ikr!",
+      "insane dmg rn!",
+      "LUL imagine mizzing that"
+    ]
+  },
+  {
+    "input": "I grapple the troll to keep it from attacking.",
+    "output": [
+      "u got this idk!",
+      "u g0t this tbh!",
+      "insanedmgrn!",
+      "tbh, that was epic!"
+    ]
+  }
+]

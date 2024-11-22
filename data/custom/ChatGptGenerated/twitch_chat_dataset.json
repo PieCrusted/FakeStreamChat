@@ -1,0 +1,1996 @@
+[
+    {
+        "input": "They just got a new high score!",
+        "output": [
+            "Headshot king!",
+            "Incredible timing!"
+        ]
+    },
+    {
+        "input": "Streamer is reading chat instead of playing.",
+        "output": [
+            "Headshot king!",
+            "Clip that!",
+            "Unreal gameplay!"
+        ]
+    },
+    {
+        "input": "Streamer fell off the map.",
+        "output": [
+            "Hard to watch sometimes!",
+            "Practice that jump!",
+            "Oh no, not again!",
+            "That was rough."
+        ]
+    },
+    {
+        "input": "They just got a new high score!",
+        "output": [
+            "Oof, tough luck.",
+            "Game over vibes.",
+            "Needs more practice."
+        ]
+    },
+    {
+        "input": "Game audio is too loud to hear the streamer.",
+        "output": [
+            "Unreal gameplay!",
+            "PogChamp moment!"
+        ]
+    },
+    {
+        "input": "They missed the jump again.",
+        "output": [
+            "Practice that jump!",
+            "Streamer is throwing!",
+            "Oh no, not again!",
+            "That was rough."
+        ]
+    },
+    {
+        "input": "Streamer just scored a headshot!",
+        "output": [
+            "Unstoppable!",
+            "PogChamp moment!",
+            "Stream highlight right there!",
+            "Amazing shot!"
+        ]
+    },
+    {
+        "input": "Streamer found a hidden treasure.",
+        "output": [
+            "Oh no, not again!",
+            "Game over vibes."
+        ]
+    },
+    {
+        "input": "Streamer found a hidden treasure.",
+        "output": [
+            "Hard to watch sometimes!",
+            "Oof, tough luck.",
+            "Practice that jump!"
+        ]
+    },
+    {
+        "input": "Game paused for a bathroom break.",
+        "output": [
+            "Stream highlight right there!",
+            "Unreal gameplay!"
+        ]
+    },
+    {
+        "input": "Their teammate just got eliminated.",
+        "output": [
+            "Skill level: pro!",
+            "Incredible timing!",
+            "Headshot king!"
+        ]
+    },
+    {
+        "input": "Streamer unlocked a rare achievement.",
+        "output": [
+            "That was rough.",
+            "Practice that jump!",
+            "Again? Seriously?"
+        ]
+    },
+    {
+        "input": "Streamer unlocked a rare achievement.",
+        "output": [
+            "Hard to watch sometimes!",
+            "Practice that jump!",
+            "That was rough.",
+            "Oof, tough luck."
+        ]
+    },
+    {
+        "input": "Their teammate just got eliminated.",
+        "output": [
+            "Skill level: pro!",
+            "Unstoppable!"
+        ]
+    },
+    {
+        "input": "They just got a new high score!",
+        "output": [
+            "That was rough.",
+            "Practice that jump!",
+            "Game over vibes.",
+            "Oof, tough luck."
+        ]
+    },
+    {
+        "input": "Game paused for a bathroom break.",
+        "output": [
+            "Clip that!",
+            "Stream highlight right there!"
+        ]
+    },
+    {
+        "input": "Streamer is reading chat instead of playing.",
+        "output": [
+            "Needs more practice.",
+            "Not their best moment."
+        ]
+    },
+    {
+        "input": "They missed the jump again.",
+        "output": [
+            "Unreal gameplay!",
+            "PogChamp moment!",
+            "Skill level: pro!"
+        ]
+    },
+    {
+        "input": "Boss fight incoming!",
+        "output": [
+            "Oof, tough luck.",
+            "That was rough.",
+            "Again? Seriously?"
+        ]
+    },
+    {
+        "input": "Streamer is reading chat instead of playing.",
+        "output": [
+            "Oh no, not again!",
+            "Not their best moment.",
+            "Hard to watch sometimes!"
+        ]
+    },
+    {
+        "input": "Game audio is too loud to hear the streamer.",
+        "output": [
+            "Clip that!",
+            "Stream highlight right there!",
+            "Headshot king!",
+            "Unstoppable!"
+        ]
+    },
+    {
+        "input": "They missed the jump again.",
+        "output": [
+            "Game over vibes.",
+            "Hard to watch sometimes!"
+        ]
+    },
+    {
+        "input": "Their teammate just got eliminated.",
+        "output": [
+            "Oh no, not again!",
+            "Game over vibes.",
+            "Streamer is throwing!"
+        ]
+    },
+    {
+        "input": "Streamer unlocked a rare achievement.",
+        "output": [
+            "Skill level: pro!",
+            "PogChamp moment!"
+        ]
+    },
+    {
+        "input": "Game audio is too loud to hear the streamer.",
+        "output": [
+            "Amazing shot!",
+            "PogChamp moment!",
+            "Stream highlight right there!",
+            "Unreal gameplay!"
+        ]
+    },
+    {
+        "input": "They just switched to a new game mid-stream.",
+        "output": [
+            "Again? Seriously?",
+            "Not their best moment."
+        ]
+    },
+    {
+        "input": "Game audio is too loud to hear the streamer.",
+        "output": [
+            "Hard to watch sometimes!",
+            "Oof, tough luck.",
+            "Needs more practice."
+        ]
+    },
+    {
+        "input": "Streamer is trying a speedrun.",
+        "output": [
+            "Needs more practice.",
+            "Oof, tough luck.",
+            "That was rough."
+        ]
+    },
+    {
+        "input": "Boss fight incoming!",
+        "output": [
+            "Hard to watch sometimes!",
+            "Oof, tough luck.",
+            "That was rough."
+        ]
+    },
+    {
+        "input": "Streamer unlocked a rare achievement.",
+        "output": [
+            "Stream highlight right there!",
+            "Headshot king!"
+        ]
+    },
+    {
+        "input": "Their teammate just got eliminated.",
+        "output": [
+            "Amazing shot!",
+            "Insane aim, dude!"
+        ]
+    },
+    {
+        "input": "Game audio is too loud to hear the streamer.",
+        "output": [
+            "Stream highlight right there!",
+            "Clip that!"
+        ]
+    },
+    {
+        "input": "Streamer fell off the map.",
+        "output": [
+            "Incredible timing!",
+            "Stream highlight right there!",
+            "Unstoppable!",
+            "Headshot king!"
+        ]
+    },
+    {
+        "input": "Boss fight incoming!",
+        "output": [
+            "Stream highlight right there!",
+            "Skill level: pro!"
+        ]
+    },
+    {
+        "input": "Streamer fell off the map.",
+        "output": [
+            "Oh no, not again!",
+            "Again? Seriously?"
+        ]
+    },
+    {
+        "input": "Their teammate just got eliminated.",
+        "output": [
+            "Clip that!",
+            "Headshot king!",
+            "Incredible timing!",
+            "Amazing shot!"
+        ]
+    },
+    {
+        "input": "Streamer fell off the map.",
+        "output": [
+            "Amazing shot!",
+            "Headshot king!",
+            "Clip that!"
+        ]
+    },
+    {
+        "input": "They just switched to a new game mid-stream.",
+        "output": [
+            "Unreal gameplay!",
+            "Stream highlight right there!"
+        ]
+    },
+    {
+        "input": "They just got a new high score!",
+        "output": [
+            "Again? Seriously?",
+            "Hard to watch sometimes!",
+            "Streamer is throwing!",
+            "Not their best moment."
+        ]
+    },
+    {
+        "input": "Game audio is too loud to hear the streamer.",
+        "output": [
+            "That was rough.",
+            "Oof, tough luck."
+        ]
+    },
+    {
+        "input": "They just got a new high score!",
+        "output": [
+            "Insane aim, dude!",
+            "Skill level: pro!"
+        ]
+    },
+    {
+        "input": "Boss fight incoming!",
+        "output": [
+            "That was rough.",
+            "Streamer is throwing!",
+            "Practice that jump!"
+        ]
+    },
+    {
+        "input": "Their teammate just got eliminated.",
+        "output": [
+            "Unreal gameplay!",
+            "Insane aim, dude!",
+            "PogChamp moment!",
+            "Incredible timing!"
+        ]
+    },
+    {
+        "input": "Their teammate just got eliminated.",
+        "output": [
+            "Unreal gameplay!",
+            "Skill level: pro!",
+            "Headshot king!",
+            "Amazing shot!"
+        ]
+    },
+    {
+        "input": "Game crashed mid-session.",
+        "output": [
+            "Headshot king!",
+            "Amazing shot!",
+            "Incredible timing!"
+        ]
+    },
+    {
+        "input": "Boss fight incoming!",
+        "output": [
+            "Unstoppable!",
+            "Insane aim, dude!"
+        ]
+    },
+    {
+        "input": "They missed the jump again.",
+        "output": [
+            "Game over vibes.",
+            "Practice that jump!"
+        ]
+    },
+    {
+        "input": "Streamer just scored a headshot!",
+        "output": [
+            "Again? Seriously?",
+            "Hard to watch sometimes!",
+            "Oh no, not again!",
+            "Not their best moment."
+        ]
+    },
+    {
+        "input": "Streamer fell off the map.",
+        "output": [
+            "Clip that!",
+            "Amazing shot!"
+        ]
+    },
+    {
+        "input": "They just got a new high score!",
+        "output": [
+            "Oof, tough luck.",
+            "Again? Seriously?",
+            "Streamer is throwing!",
+            "Practice that jump!"
+        ]
+    },
+    {
+        "input": "Streamer fell off the map.",
+        "output": [
+            "Oh no, not again!",
+            "That was rough.",
+            "Needs more practice."
+        ]
+    },
+    {
+        "input": "Streamer found a hidden treasure.",
+        "output": [
+            "Needs more practice.",
+            "Oof, tough luck.",
+            "Streamer is throwing!",
+            "Game over vibes."
+        ]
+    },
+    {
+        "input": "Game audio is too loud to hear the streamer.",
+        "output": [
+            "Skill level: pro!",
+            "Amazing shot!"
+        ]
+    },
+    {
+        "input": "Boss fight incoming!",
+        "output": [
+            "Stream highlight right there!",
+            "Unstoppable!"
+        ]
+    },
+    {
+        "input": "Streamer fell off the map.",
+        "output": [
+            "Needs more practice.",
+            "Oh no, not again!"
+        ]
+    },
+    {
+        "input": "Their teammate just got eliminated.",
+        "output": [
+            "Amazing shot!",
+            "Stream highlight right there!",
+            "Incredible timing!",
+            "Clip that!"
+        ]
+    },
+    {
+        "input": "They missed the jump again.",
+        "output": [
+            "Needs more practice.",
+            "Again? Seriously?",
+            "Streamer is throwing!"
+        ]
+    },
+    {
+        "input": "They just switched to a new game mid-stream.",
+        "output": [
+            "Unstoppable!",
+            "PogChamp moment!",
+            "Insane aim, dude!",
+            "Amazing shot!"
+        ]
+    },
+    {
+        "input": "Streamer is reading chat instead of playing.",
+        "output": [
+            "Not their best moment.",
+            "Needs more practice."
+        ]
+    },
+    {
+        "input": "Boss fight incoming!",
+        "output": [
+            "Insane aim, dude!",
+            "Unstoppable!",
+            "Unreal gameplay!",
+            "Amazing shot!"
+        ]
+    },
+    {
+        "input": "They missed the jump again.",
+        "output": [
+            "Unreal gameplay!",
+            "PogChamp moment!",
+            "Clip that!",
+            "Headshot king!"
+        ]
+    },
+    {
+        "input": "Boss fight incoming!",
+        "output": [
+            "Amazing shot!",
+            "Stream highlight right there!"
+        ]
+    },
+    {
+        "input": "They just switched to a new game mid-stream.",
+        "output": [
+            "That was rough.",
+            "Not their best moment.",
+            "Hard to watch sometimes!",
+            "Practice that jump!"
+        ]
+    },
+    {
+        "input": "Game paused for a bathroom break.",
+        "output": [
+            "Practice that jump!",
+            "Game over vibes."
+        ]
+    },
+    {
+        "input": "Streamer is trying a speedrun.",
+        "output": [
+            "PogChamp moment!",
+            "Insane aim, dude!",
+            "Incredible timing!"
+        ]
+    },
+    {
+        "input": "Streamer is reading chat instead of playing.",
+        "output": [
+            "PogChamp moment!",
+            "Headshot king!"
+        ]
+    },
+    {
+        "input": "They just got a new high score!",
+        "output": [
+            "Not their best moment.",
+            "Hard to watch sometimes!",
+            "Again? Seriously?"
+        ]
+    },
+    {
+        "input": "They are stuck on the puzzle again.",
+        "output": [
+            "Amazing shot!",
+            "Skill level: pro!",
+            "Unstoppable!"
+        ]
+    },
+    {
+        "input": "Boss fight incoming!",
+        "output": [
+            "Insane aim, dude!",
+            "Incredible timing!"
+        ]
+    },
+    {
+        "input": "Boss fight incoming!",
+        "output": [
+            "Practice that jump!",
+            "Oof, tough luck."
+        ]
+    },
+    {
+        "input": "Streamer found a hidden treasure.",
+        "output": [
+            "PogChamp moment!",
+            "Unreal gameplay!"
+        ]
+    },
+    {
+        "input": "Streamer unlocked a rare achievement.",
+        "output": [
+            "Hard to watch sometimes!",
+            "Streamer is throwing!",
+            "Again? Seriously?",
+            "Needs more practice."
+        ]
+    },
+    {
+        "input": "Boss fight incoming!",
+        "output": [
+            "Again? Seriously?",
+            "Streamer is throwing!",
+            "That was rough.",
+            "Game over vibes."
+        ]
+    },
+    {
+        "input": "Streamer unlocked a rare achievement.",
+        "output": [
+            "Needs more practice.",
+            "Practice that jump!"
+        ]
+    },
+    {
+        "input": "Streamer unlocked a rare achievement.",
+        "output": [
+            "That was rough.",
+            "Hard to watch sometimes!"
+        ]
+    },
+    {
+        "input": "Streamer is reading chat instead of playing.",
+        "output": [
+            "Oof, tough luck.",
+            "Streamer is throwing!",
+            "Hard to watch sometimes!",
+            "Needs more practice."
+        ]
+    },
+    {
+        "input": "Game paused for a bathroom break.",
+        "output": [
+            "That was rough.",
+            "Oof, tough luck.",
+            "Practice that jump!",
+            "Game over vibes."
+        ]
+    },
+    {
+        "input": "Streamer found a hidden treasure.",
+        "output": [
+            "Headshot king!",
+            "Clip that!"
+        ]
+    },
+    {
+        "input": "Game audio is too loud to hear the streamer.",
+        "output": [
+            "Needs more practice.",
+            "Practice that jump!"
+        ]
+    },
+    {
+        "input": "They are stuck on the puzzle again.",
+        "output": [
+            "Headshot king!",
+            "PogChamp moment!",
+            "Unreal gameplay!"
+        ]
+    },
+    {
+        "input": "Game paused for a bathroom break.",
+        "output": [
+            "Oof, tough luck.",
+            "Oh no, not again!",
+            "Hard to watch sometimes!",
+            "Practice that jump!"
+        ]
+    },
+    {
+        "input": "Boss fight incoming!",
+        "output": [
+            "Unstoppable!",
+            "Clip that!",
+            "Stream highlight right there!",
+            "Headshot king!"
+        ]
+    },
+    {
+        "input": "They missed the jump again.",
+        "output": [
+            "Practice that jump!",
+            "Needs more practice."
+        ]
+    },
+    {
+        "input": "They are stuck on the puzzle again.",
+        "output": [
+            "Again? Seriously?",
+            "Oh no, not again!"
+        ]
+    },
+    {
+        "input": "They missed the jump again.",
+        "output": [
+            "Clip that!",
+            "Stream highlight right there!",
+            "Skill level: pro!",
+            "PogChamp moment!"
+        ]
+    },
+    {
+        "input": "Streamer just scored a headshot!",
+        "output": [
+            "Hard to watch sometimes!",
+            "Oh no, not again!"
+        ]
+    },
+    {
+        "input": "They missed the jump again.",
+        "output": [
+            "Amazing shot!",
+            "Unstoppable!",
+            "Clip that!",
+            "Headshot king!"
+        ]
+    },
+    {
+        "input": "Boss fight incoming!",
+        "output": [
+            "Headshot king!",
+            "Unstoppable!",
+            "Insane aim, dude!"
+        ]
+    },
+    {
+        "input": "Streamer fell off the map.",
+        "output": [
+            "Skill level: pro!",
+            "Clip that!"
+        ]
+    },
+    {
+        "input": "Game audio is too loud to hear the streamer.",
+        "output": [
+            "Headshot king!",
+            "Incredible timing!",
+            "Amazing shot!",
+            "Unreal gameplay!"
+        ]
+    },
+    {
+        "input": "Streamer is reading chat instead of playing.",
+        "output": [
+            "Incredible timing!",
+            "Clip that!",
+            "Amazing shot!",
+            "Headshot king!"
+        ]
+    },
+    {
+        "input": "Streamer unlocked a rare achievement.",
+        "output": [
+            "Game over vibes.",
+            "Again? Seriously?",
+            "Needs more practice."
+        ]
+    },
+    {
+        "input": "Streamer fell off the map.",
+        "output": [
+            "Game over vibes.",
+            "Practice that jump!",
+            "Again? Seriously?"
+        ]
+    },
+    {
+        "input": "Their teammate just got eliminated.",
+        "output": [
+            "Amazing shot!",
+            "Incredible timing!",
+            "Clip that!",
+            "Insane aim, dude!"
+        ]
+    },
+    {
+        "input": "Streamer fell off the map.",
+        "output": [
+            "Oh no, not again!",
+            "Hard to watch sometimes!",
+            "Not their best moment.",
+            "Practice that jump!"
+        ]
+    },
+    {
+        "input": "They missed the jump again.",
+        "output": [
+            "Clip that!",
+            "PogChamp moment!"
+        ]
+    },
+    {
+        "input": "Game audio is too loud to hear the streamer.",
+        "output": [
+            "Not their best moment.",
+            "That was rough.",
+            "Game over vibes.",
+            "Oof, tough luck."
+        ]
+    },
+    {
+        "input": "Boss fight incoming!",
+        "output": [
+            "Incredible timing!",
+            "Headshot king!",
+            "Insane aim, dude!"
+        ]
+    },
+    {
+        "input": "They just got a new high score!",
+        "output": [
+            "Stream highlight right there!",
+            "Incredible timing!"
+        ]
+    },
+    {
+        "input": "Their teammate just got eliminated.",
+        "output": [
+            "Amazing shot!",
+            "Stream highlight right there!",
+            "Incredible timing!"
+        ]
+    },
+    {
+        "input": "Streamer just scored a headshot!",
+        "output": [
+            "Oh no, not again!",
+            "That was rough.",
+            "Needs more practice."
+        ]
+    },
+    {
+        "input": "Streamer just scored a headshot!",
+        "output": [
+            "Streamer is throwing!",
+            "Hard to watch sometimes!",
+            "Game over vibes."
+        ]
+    },
+    {
+        "input": "Streamer just scored a headshot!",
+        "output": [
+            "Incredible timing!",
+            "Insane aim, dude!",
+            "Skill level: pro!"
+        ]
+    },
+    {
+        "input": "Streamer found a hidden treasure.",
+        "output": [
+            "Headshot king!",
+            "Clip that!",
+            "Amazing shot!",
+            "Unstoppable!"
+        ]
+    },
+    {
+        "input": "Streamer found a hidden treasure.",
+        "output": [
+            "Insane aim, dude!",
+            "Amazing shot!",
+            "Headshot king!"
+        ]
+    },
+    {
+        "input": "Streamer found a hidden treasure.",
+        "output": [
+            "Stream highlight right there!",
+            "Skill level: pro!",
+            "Amazing shot!"
+        ]
+    },
+    {
+        "input": "Streamer is trying a speedrun.",
+        "output": [
+            "Again? Seriously?",
+            "Streamer is throwing!"
+        ]
+    },
+    {
+        "input": "Streamer found a hidden treasure.",
+        "output": [
+            "Oof, tough luck.",
+            "Hard to watch sometimes!",
+            "That was rough."
+        ]
+    },
+    {
+        "input": "They just switched to a new game mid-stream.",
+        "output": [
+            "That was rough.",
+            "Hard to watch sometimes!"
+        ]
+    },
+    {
+        "input": "They missed the jump again.",
+        "output": [
+            "Headshot king!",
+            "PogChamp moment!",
+            "Insane aim, dude!"
+        ]
+    },
+    {
+        "input": "Streamer fell off the map.",
+        "output": [
+            "Hard to watch sometimes!",
+            "Game over vibes."
+        ]
+    },
+    {
+        "input": "Their teammate just got eliminated.",
+        "output": [
+            "Hard to watch sometimes!",
+            "Practice that jump!"
+        ]
+    },
+    {
+        "input": "They are stuck on the puzzle again.",
+        "output": [
+            "Stream highlight right there!",
+            "Incredible timing!"
+        ]
+    },
+    {
+        "input": "Their teammate just got eliminated.",
+        "output": [
+            "Practice that jump!",
+            "Needs more practice.",
+            "Hard to watch sometimes!"
+        ]
+    },
+    {
+        "input": "Game audio is too loud to hear the streamer.",
+        "output": [
+            "Insane aim, dude!",
+            "Incredible timing!"
+        ]
+    },
+    {
+        "input": "Game audio is too loud to hear the streamer.",
+        "output": [
+            "Skill level: pro!",
+            "Amazing shot!"
+        ]
+    },
+    {
+        "input": "They just got a new high score!",
+        "output": [
+            "Oof, tough luck.",
+            "Practice that jump!"
+        ]
+    },
+    {
+        "input": "They missed the jump again.",
+        "output": [
+            "Incredible timing!",
+            "Clip that!",
+            "Unstoppable!",
+            "Insane aim, dude!"
+        ]
+    },
+    {
+        "input": "Streamer is reading chat instead of playing.",
+        "output": [
+            "Hard to watch sometimes!",
+            "Oh no, not again!"
+        ]
+    },
+    {
+        "input": "They missed the jump again.",
+        "output": [
+            "Not their best moment.",
+            "Game over vibes.",
+            "Practice that jump!",
+            "Again? Seriously?"
+        ]
+    },
+    {
+        "input": "They just switched to a new game mid-stream.",
+        "output": [
+            "Not their best moment.",
+            "That was rough."
+        ]
+    },
+    {
+        "input": "Streamer just scored a headshot!",
+        "output": [
+            "Unreal gameplay!",
+            "Clip that!",
+            "PogChamp moment!"
+        ]
+    },
+    {
+        "input": "Game audio is too loud to hear the streamer.",
+        "output": [
+            "Stream highlight right there!",
+            "Incredible timing!",
+            "Headshot king!",
+            "PogChamp moment!"
+        ]
+    },
+    {
+        "input": "Streamer unlocked a rare achievement.",
+        "output": [
+            "That was rough.",
+            "Streamer is throwing!",
+            "Oh no, not again!",
+            "Oof, tough luck."
+        ]
+    },
+    {
+        "input": "Their teammate just got eliminated.",
+        "output": [
+            "Skill level: pro!",
+            "Incredible timing!",
+            "Unreal gameplay!",
+            "Amazing shot!"
+        ]
+    },
+    {
+        "input": "Streamer unlocked a rare achievement.",
+        "output": [
+            "Oh no, not again!",
+            "That was rough.",
+            "Oof, tough luck."
+        ]
+    },
+    {
+        "input": "Streamer just scored a headshot!",
+        "output": [
+            "Practice that jump!",
+            "Again? Seriously?",
+            "Needs more practice.",
+            "Streamer is throwing!"
+        ]
+    },
+    {
+        "input": "Streamer fell off the map.",
+        "output": [
+            "PogChamp moment!",
+            "Unreal gameplay!",
+            "Unstoppable!"
+        ]
+    },
+    {
+        "input": "Streamer fell off the map.",
+        "output": [
+            "Headshot king!",
+            "Skill level: pro!"
+        ]
+    },
+    {
+        "input": "Game crashed mid-session.",
+        "output": [
+            "Incredible timing!",
+            "Insane aim, dude!",
+            "PogChamp moment!"
+        ]
+    },
+    {
+        "input": "Streamer unlocked a rare achievement.",
+        "output": [
+            "Needs more practice.",
+            "Oof, tough luck.",
+            "Game over vibes.",
+            "Streamer is throwing!"
+        ]
+    },
+    {
+        "input": "Boss fight incoming!",
+        "output": [
+            "Amazing shot!",
+            "Skill level: pro!"
+        ]
+    },
+    {
+        "input": "They are stuck on the puzzle again.",
+        "output": [
+            "Headshot king!",
+            "Unstoppable!",
+            "PogChamp moment!"
+        ]
+    },
+    {
+        "input": "They missed the jump again.",
+        "output": [
+            "Headshot king!",
+            "PogChamp moment!",
+            "Clip that!"
+        ]
+    },
+    {
+        "input": "Game paused for a bathroom break.",
+        "output": [
+            "Amazing shot!",
+            "Clip that!"
+        ]
+    },
+    {
+        "input": "They are stuck on the puzzle again.",
+        "output": [
+            "Headshot king!",
+            "Unstoppable!"
+        ]
+    },
+    {
+        "input": "They just got a new high score!",
+        "output": [
+            "Game over vibes.",
+            "Oof, tough luck."
+        ]
+    },
+    {
+        "input": "Streamer is reading chat instead of playing.",
+        "output": [
+            "Oh no, not again!",
+            "Oof, tough luck."
+        ]
+    },
+    {
+        "input": "Streamer fell off the map.",
+        "output": [
+            "Headshot king!",
+            "Insane aim, dude!"
+        ]
+    },
+    {
+        "input": "Streamer is reading chat instead of playing.",
+        "output": [
+            "Hard to watch sometimes!",
+            "Oof, tough luck.",
+            "Game over vibes."
+        ]
+    },
+    {
+        "input": "Boss fight incoming!",
+        "output": [
+            "Again? Seriously?",
+            "Hard to watch sometimes!",
+            "That was rough.",
+            "Oof, tough luck."
+        ]
+    },
+    {
+        "input": "Game crashed mid-session.",
+        "output": [
+            "Unstoppable!",
+            "Clip that!",
+            "Skill level: pro!"
+        ]
+    },
+    {
+        "input": "Streamer is reading chat instead of playing.",
+        "output": [
+            "Amazing shot!",
+            "Unreal gameplay!"
+        ]
+    },
+    {
+        "input": "Boss fight incoming!",
+        "output": [
+            "PogChamp moment!",
+            "Insane aim, dude!",
+            "Clip that!"
+        ]
+    },
+    {
+        "input": "Game crashed mid-session.",
+        "output": [
+            "Stream highlight right there!",
+            "PogChamp moment!",
+            "Clip that!",
+            "Headshot king!"
+        ]
+    },
+    {
+        "input": "Streamer is trying a speedrun.",
+        "output": [
+            "Headshot king!",
+            "Clip that!",
+            "Unstoppable!",
+            "PogChamp moment!"
+        ]
+    },
+    {
+        "input": "Streamer found a hidden treasure.",
+        "output": [
+            "Streamer is throwing!",
+            "Needs more practice.",
+            "Game over vibes.",
+            "Again? Seriously?"
+        ]
+    },
+    {
+        "input": "Their teammate just got eliminated.",
+        "output": [
+            "Insane aim, dude!",
+            "Incredible timing!",
+            "Clip that!"
+        ]
+    },
+    {
+        "input": "They just switched to a new game mid-stream.",
+        "output": [
+            "Incredible timing!",
+            "Skill level: pro!"
+        ]
+    },
+    {
+        "input": "Streamer found a hidden treasure.",
+        "output": [
+            "Insane aim, dude!",
+            "Incredible timing!"
+        ]
+    },
+    {
+        "input": "Boss fight incoming!",
+        "output": [
+            "Incredible timing!",
+            "Headshot king!",
+            "Unstoppable!",
+            "Insane aim, dude!"
+        ]
+    },
+    {
+        "input": "They missed the jump again.",
+        "output": [
+            "Practice that jump!",
+            "Hard to watch sometimes!",
+            "That was rough."
+        ]
+    },
+    {
+        "input": "Boss fight incoming!",
+        "output": [
+            "Insane aim, dude!",
+            "Skill level: pro!",
+            "Headshot king!"
+        ]
+    },
+    {
+        "input": "Their teammate just got eliminated.",
+        "output": [
+            "Streamer is throwing!",
+            "Hard to watch sometimes!",
+            "Not their best moment."
+        ]
+    },
+    {
+        "input": "They missed the jump again.",
+        "output": [
+            "Incredible timing!",
+            "Amazing shot!",
+            "Insane aim, dude!",
+            "Unstoppable!"
+        ]
+    },
+    {
+        "input": "They just got a new high score!",
+        "output": [
+            "Oof, tough luck.",
+            "Hard to watch sometimes!",
+            "Not their best moment."
+        ]
+    },
+    {
+        "input": "They are stuck on the puzzle again.",
+        "output": [
+            "Unreal gameplay!",
+            "Clip that!",
+            "Unstoppable!"
+        ]
+    },
+    {
+        "input": "Boss fight incoming!",
+        "output": [
+            "Streamer is throwing!",
+            "Hard to watch sometimes!",
+            "Practice that jump!",
+            "Again? Seriously?"
+        ]
+    },
+    {
+        "input": "Streamer fell off the map.",
+        "output": [
+            "Incredible timing!",
+            "Insane aim, dude!",
+            "Stream highlight right there!"
+        ]
+    },
+    {
+        "input": "Game paused for a bathroom break.",
+        "output": [
+            "Insane aim, dude!",
+            "Unstoppable!"
+        ]
+    },
+    {
+        "input": "Streamer found a hidden treasure.",
+        "output": [
+            "Streamer is throwing!",
+            "Again? Seriously?"
+        ]
+    },
+    {
+        "input": "Boss fight incoming!",
+        "output": [
+            "Practice that jump!",
+            "Oh no, not again!",
+            "Game over vibes."
+        ]
+    },
+    {
+        "input": "Streamer unlocked a rare achievement.",
+        "output": [
+            "Skill level: pro!",
+            "Clip that!",
+            "Amazing shot!"
+        ]
+    },
+    {
+        "input": "They missed the jump again.",
+        "output": [
+            "Insane aim, dude!",
+            "Unstoppable!",
+            "Clip that!",
+            "Headshot king!"
+        ]
+    },
+    {
+        "input": "Streamer found a hidden treasure.",
+        "output": [
+            "Oof, tough luck.",
+            "Streamer is throwing!",
+            "Practice that jump!"
+        ]
+    },
+    {
+        "input": "Streamer is reading chat instead of playing.",
+        "output": [
+            "Headshot king!",
+            "PogChamp moment!",
+            "Stream highlight right there!",
+            "Unstoppable!"
+        ]
+    },
+    {
+        "input": "Game audio is too loud to hear the streamer.",
+        "output": [
+            "That was rough.",
+            "Oh no, not again!"
+        ]
+    },
+    {
+        "input": "Streamer fell off the map.",
+        "output": [
+            "Practice that jump!",
+            "Needs more practice.",
+            "Hard to watch sometimes!",
+            "Oh no, not again!"
+        ]
+    },
+    {
+        "input": "Game crashed mid-session.",
+        "output": [
+            "Streamer is throwing!",
+            "Game over vibes.",
+            "Needs more practice.",
+            "Hard to watch sometimes!"
+        ]
+    },
+    {
+        "input": "They missed the jump again.",
+        "output": [
+            "Oof, tough luck.",
+            "Hard to watch sometimes!",
+            "Not their best moment.",
+            "That was rough."
+        ]
+    },
+    {
+        "input": "Streamer is reading chat instead of playing.",
+        "output": [
+            "Again? Seriously?",
+            "Game over vibes.",
+            "That was rough."
+        ]
+    },
+    {
+        "input": "Streamer found a hidden treasure.",
+        "output": [
+            "Practice that jump!",
+            "Again? Seriously?"
+        ]
+    },
+    {
+        "input": "Boss fight incoming!",
+        "output": [
+            "Needs more practice.",
+            "Oof, tough luck.",
+            "Practice that jump!"
+        ]
+    },
+    {
+        "input": "Streamer just scored a headshot!",
+        "output": [
+            "Incredible timing!",
+            "Unreal gameplay!",
+            "Headshot king!"
+        ]
+    },
+    {
+        "input": "They missed the jump again.",
+        "output": [
+            "Oof, tough luck.",
+            "Streamer is throwing!",
+            "That was rough.",
+            "Not their best moment."
+        ]
+    },
+    {
+        "input": "Game crashed mid-session.",
+        "output": [
+            "Streamer is throwing!",
+            "Again? Seriously?",
+            "Not their best moment.",
+            "Game over vibes."
+        ]
+    },
+    {
+        "input": "They just got a new high score!",
+        "output": [
+            "Practice that jump!",
+            "Game over vibes.",
+            "Needs more practice."
+        ]
+    },
+    {
+        "input": "Game audio is too loud to hear the streamer.",
+        "output": [
+            "Needs more practice.",
+            "Practice that jump!",
+            "Oh no, not again!",
+            "Hard to watch sometimes!"
+        ]
+    },
+    {
+        "input": "They are stuck on the puzzle again.",
+        "output": [
+            "Again? Seriously?",
+            "Needs more practice.",
+            "Streamer is throwing!",
+            "Not their best moment."
+        ]
+    },
+    {
+        "input": "Streamer is reading chat instead of playing.",
+        "output": [
+            "Headshot king!",
+            "Unstoppable!",
+            "Clip that!",
+            "Amazing shot!"
+        ]
+    },
+    {
+        "input": "They just switched to a new game mid-stream.",
+        "output": [
+            "Stream highlight right there!",
+            "Skill level: pro!",
+            "Headshot king!",
+            "Clip that!"
+        ]
+    },
+    {
+        "input": "Their teammate just got eliminated.",
+        "output": [
+            "Stream highlight right there!",
+            "Headshot king!",
+            "Insane aim, dude!",
+            "Clip that!"
+        ]
+    },
+    {
+        "input": "Game audio is too loud to hear the streamer.",
+        "output": [
+            "Not their best moment.",
+            "Oof, tough luck.",
+            "That was rough."
+        ]
+    },
+    {
+        "input": "Streamer is trying a speedrun.",
+        "output": [
+            "That was rough.",
+            "Hard to watch sometimes!",
+            "Again? Seriously?",
+            "Needs more practice."
+        ]
+    },
+    {
+        "input": "They just got a new high score!",
+        "output": [
+            "Needs more practice.",
+            "Practice that jump!",
+            "Again? Seriously?",
+            "Streamer is throwing!"
+        ]
+    },
+    {
+        "input": "Game crashed mid-session.",
+        "output": [
+            "Clip that!",
+            "Incredible timing!",
+            "Stream highlight right there!",
+            "Unstoppable!"
+        ]
+    },
+    {
+        "input": "They missed the jump again.",
+        "output": [
+            "Stream highlight right there!",
+            "Insane aim, dude!",
+            "Amazing shot!",
+            "Unreal gameplay!"
+        ]
+    },
+    {
+        "input": "They are stuck on the puzzle again.",
+        "output": [
+            "Hard to watch sometimes!",
+            "That was rough.",
+            "Not their best moment.",
+            "Practice that jump!"
+        ]
+    },
+    {
+        "input": "Streamer fell off the map.",
+        "output": [
+            "Skill level: pro!",
+            "PogChamp moment!"
+        ]
+    },
+    {
+        "input": "They are stuck on the puzzle again.",
+        "output": [
+            "Amazing shot!",
+            "Insane aim, dude!",
+            "Clip that!"
+        ]
+    },
+    {
+        "input": "Streamer is reading chat instead of playing.",
+        "output": [
+            "Again? Seriously?",
+            "Not their best moment.",
+            "Game over vibes."
+        ]
+    },
+    {
+        "input": "Boss fight incoming!",
+        "output": [
+            "Streamer is throwing!",
+            "Oof, tough luck.",
+            "Needs more practice.",
+            "Practice that jump!"
+        ]
+    },
+    {
+        "input": "Streamer fell off the map.",
+        "output": [
+            "PogChamp moment!",
+            "Skill level: pro!"
+        ]
+    },
+    {
+        "input": "They just switched to a new game mid-stream.",
+        "output": [
+            "Unreal gameplay!",
+            "Unstoppable!",
+            "Amazing shot!"
+        ]
+    },
+    {
+        "input": "Boss fight incoming!",
+        "output": [
+            "Amazing shot!",
+            "Unreal gameplay!",
+            "Stream highlight right there!",
+            "Insane aim, dude!"
+        ]
+    },
+    {
+        "input": "Streamer unlocked a rare achievement.",
+        "output": [
+            "Headshot king!",
+            "Unstoppable!",
+            "Incredible timing!",
+            "Clip that!"
+        ]
+    },
+    {
+        "input": "They just switched to a new game mid-stream.",
+        "output": [
+            "Practice that jump!",
+            "Oh no, not again!"
+        ]
+    },
+    {
+        "input": "Streamer is reading chat instead of playing.",
+        "output": [
+            "Stream highlight right there!",
+            "Unreal gameplay!"
+        ]
+    },
+    {
+        "input": "Game crashed mid-session.",
+        "output": [
+            "PogChamp moment!",
+            "Clip that!",
+            "Unstoppable!",
+            "Headshot king!"
+        ]
+    },
+    {
+        "input": "They are stuck on the puzzle again.",
+        "output": [
+            "PogChamp moment!",
+            "Unreal gameplay!",
+            "Headshot king!"
+        ]
+    },
+    {
+        "input": "They just got a new high score!",
+        "output": [
+            "Streamer is throwing!",
+            "Oof, tough luck."
+        ]
+    },
+    {
+        "input": "Game paused for a bathroom break.",
+        "output": [
+            "Insane aim, dude!",
+            "Unreal gameplay!",
+            "Incredible timing!",
+            "PogChamp moment!"
+        ]
+    },
+    {
+        "input": "Game audio is too loud to hear the streamer.",
+        "output": [
+            "Hard to watch sometimes!",
+            "Oof, tough luck.",
+            "Again? Seriously?"
+        ]
+    },
+    {
+        "input": "Game crashed mid-session.",
+        "output": [
+            "Not their best moment.",
+            "Practice that jump!"
+        ]
+    },
+    {
+        "input": "Streamer is reading chat instead of playing.",
+        "output": [
+            "Skill level: pro!",
+            "Headshot king!",
+            "Unstoppable!",
+            "Incredible timing!"
+        ]
+    },
+    {
+        "input": "Boss fight incoming!",
+        "output": [
+            "Oof, tough luck.",
+            "Needs more practice."
+        ]
+    },
+    {
+        "input": "Their teammate just got eliminated.",
+        "output": [
+            "Oof, tough luck.",
+            "Not their best moment."
+        ]
+    },
+    {
+        "input": "Streamer just scored a headshot!",
+        "output": [
+            "Clip that!",
+            "Unstoppable!",
+            "Incredible timing!"
+        ]
+    },
+    {
+        "input": "Their teammate just got eliminated.",
+        "output": [
+            "Headshot king!",
+            "Incredible timing!"
+        ]
+    },
+    {
+        "input": "They are stuck on the puzzle again.",
+        "output": [
+            "Insane aim, dude!",
+            "Amazing shot!"
+        ]
+    },
+    {
+        "input": "They missed the jump again.",
+        "output": [
+            "Headshot king!",
+            "Unstoppable!",
+            "Unreal gameplay!",
+            "Insane aim, dude!"
+        ]
+    },
+    {
+        "input": "Game audio is too loud to hear the streamer.",
+        "output": [
+            "Oh no, not again!",
+            "Game over vibes."
+        ]
+    },
+    {
+        "input": "Their teammate just got eliminated.",
+        "output": [
+            "Oof, tough luck.",
+            "Game over vibes.",
+            "That was rough."
+        ]
+    },
+    {
+        "input": "They missed the jump again.",
+        "output": [
+            "Oh no, not again!",
+            "Game over vibes.",
+            "That was rough."
+        ]
+    },
+    {
+        "input": "They just got a new high score!",
+        "output": [
+            "Clip that!",
+            "Skill level: pro!"
+        ]
+    },
+    {
+        "input": "Streamer just scored a headshot!",
+        "output": [
+            "Amazing shot!",
+            "Insane aim, dude!"
+        ]
+    },
+    {
+        "input": "Streamer is reading chat instead of playing.",
+        "output": [
+            "Needs more practice.",
+            "Oof, tough luck.",
+            "Streamer is throwing!",
+            "Again? Seriously?"
+        ]
+    },
+    {
+        "input": "Streamer just scored a headshot!",
+        "output": [
+            "Needs more practice.",
+            "Hard to watch sometimes!"
+        ]
+    },
+    {
+        "input": "Streamer is reading chat instead of playing.",
+        "output": [
+            "Streamer is throwing!",
+            "Oof, tough luck."
+        ]
+    },
+    {
+        "input": "Streamer unlocked a rare achievement.",
+        "output": [
+            "Again? Seriously?",
+            "Oh no, not again!",
+            "Game over vibes.",
+            "That was rough."
+        ]
+    },
+    {
+        "input": "Streamer found a hidden treasure.",
+        "output": [
+            "Game over vibes.",
+            "Streamer is throwing!",
+            "Oof, tough luck.",
+            "Again? Seriously?"
+        ]
+    },
+    {
+        "input": "Streamer fell off the map.",
+        "output": [
+            "Stream highlight right there!",
+            "Incredible timing!",
+            "Headshot king!"
+        ]
+    },
+    {
+        "input": "Game paused for a bathroom break.",
+        "output": [
+            "Headshot king!",
+            "Unstoppable!",
+            "PogChamp moment!"
+        ]
+    },
+    {
+        "input": "Streamer is trying a speedrun.",
+        "output": [
+            "Skill level: pro!",
+            "Clip that!"
+        ]
+    },
+    {
+        "input": "They just got a new high score!",
+        "output": [
+            "Unreal gameplay!",
+            "Skill level: pro!",
+            "Stream highlight right there!"
+        ]
+    },
+    {
+        "input": "Game crashed mid-session.",
+        "output": [
+            "PogChamp moment!",
+            "Unreal gameplay!",
+            "Clip that!",
+            "Skill level: pro!"
+        ]
+    },
+    {
+        "input": "Streamer just scored a headshot!",
+        "output": [
+            "Unreal gameplay!",
+            "Unstoppable!",
+            "Incredible timing!",
+            "Clip that!"
+        ]
+    },
+    {
+        "input": "They just got a new high score!",
+        "output": [
+            "Unstoppable!",
+            "Headshot king!",
+            "PogChamp moment!"
+        ]
+    },
+    {
+        "input": "Game audio is too loud to hear the streamer.",
+        "output": [
+            "Unreal gameplay!",
+            "Skill level: pro!",
+            "Incredible timing!"
+        ]
+    },
+    {
+        "input": "They just switched to a new game mid-stream.",
+        "output": [
+            "Unstoppable!",
+            "Stream highlight right there!"
+        ]
+    },
+    {
+        "input": "They just got a new high score!",
+        "output": [
+            "Game over vibes.",
+            "That was rough.",
+            "Hard to watch sometimes!",
+            "Again? Seriously?"
+        ]
+    },
+    {
+        "input": "Their teammate just got eliminated.",
+        "output": [
+            "Incredible timing!",
+            "Clip that!",
+            "Stream highlight right there!",
+            "Insane aim, dude!"
+        ]
+    },
+    {
+        "input": "They missed the jump again.",
+        "output": [
+            "PogChamp moment!",
+            "Headshot king!",
+            "Insane aim, dude!",
+            "Clip that!"
+        ]
+    },
+    {
+        "input": "Game paused for a bathroom break.",
+        "output": [
+            "Skill level: pro!",
+            "Headshot king!",
+            "PogChamp moment!"
+        ]
+    },
+    {
+        "input": "Streamer just scored a headshot!",
+        "output": [
+            "PogChamp moment!",
+            "Stream highlight right there!",
+            "Insane aim, dude!"
+        ]
+    },
+    {
+        "input": "Game paused for a bathroom break.",
+        "output": [
+            "PogChamp moment!",
+            "Headshot king!"
+        ]
+    },
+    {
+        "input": "They missed the jump again.",
+        "output": [
+            "Again? Seriously?",
+            "Oh no, not again!"
+        ]
+    },
+    {
+        "input": "Streamer unlocked a rare achievement.",
+        "output": [
+            "Oh no, not again!",
+            "Oof, tough luck.",
+            "Again? Seriously?"
+        ]
+    },
+    {
+        "input": "They just got a new high score!",
+        "output": [
+            "Incredible timing!",
+            "Clip that!"
+        ]
+    },
+    {
+        "input": "Boss fight incoming!",
+        "output": [
+            "Incredible timing!",
+            "Unreal gameplay!",
+            "Skill level: pro!",
+            "Clip that!"
+        ]
+    },
+    {
+        "input": "They just got a new high score!",
+        "output": [
+            "Again? Seriously?",
+            "Not their best moment."
+        ]
+    },
+    {
+        "input": "They missed the jump again.",
+        "output": [
+            "Needs more practice.",
+            "Game over vibes.",
+            "Not their best moment."
+        ]
+    },
+    {
+        "input": "Game audio is too loud to hear the streamer.",
+        "output": [
+            "Hard to watch sometimes!",
+            "Not their best moment.",
+            "Practice that jump!"
+        ]
+    },
+    {
+        "input": "They just got a new high score!",
+        "output": [
+            "Game over vibes.",
+            "Oh no, not again!",
+            "Not their best moment."
+        ]
+    },
+    {
+        "input": "Game audio is too loud to hear the streamer.",
+        "output": [
+            "Oof, tough luck.",
+            "Game over vibes."
+        ]
+    },
+    {
+        "input": "They just switched to a new game mid-stream.",
+        "output": [
+            "Headshot king!",
+            "Incredible timing!",
+            "Unreal gameplay!",
+            "Clip that!"
+        ]
+    },
+    {
+        "input": "Streamer is reading chat instead of playing.",
+        "output": [
+            "Unreal gameplay!",
+            "Unstoppable!"
+        ]
+    },
+    {
+        "input": "Their teammate just got eliminated.",
+        "output": [
+            "Not their best moment.",
+            "Hard to watch sometimes!",
+            "That was rough."
+        ]
+    },
+    {
+        "input": "Boss fight incoming!",
+        "output": [
+            "Skill level: pro!",
+            "Incredible timing!",
+            "Clip that!",
+            "Unreal gameplay!"
+        ]
+    },
+    {
+        "input": "They just switched to a new game mid-stream.",
+        "output": [
+            "Incredible timing!",
+            "Skill level: pro!"
+        ]
+    }
+]
