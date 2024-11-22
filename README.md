@@ -10,17 +10,17 @@ Note: The project's basis is to run everything locally so we there shouldn't be 
 Install the dependencies using the make file
 
 ```bash
-  make install
+make install
 ```
 Prepare data in ```data/custom``` folder, in json format. Then run either:
 ```bash
-  make combine-training-data-only
+make combine-training-data-only
 ```
 ```bash
-  make combine-training-data-test-split
+make combine-training-data-test-split
 ```
 ```bash
-  make combine-training-data-test-split 0.3
+make combine-training-data-test-split 0.3
 ```
 The first command combines all the jsons in ```data/custom``` to ```data/train.json```
 
@@ -31,7 +31,7 @@ The second and third command combines and splits the jsons in ```data/custom``` 
 To test this project run
 
 ```bash
-  make run-transcription
+make run-transcription
 ```
 To test out the live transcription. So far it is only single threaded, so there are holes in the aduio where it is not recording because it is processing the audio. 
 
