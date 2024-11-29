@@ -37,3 +37,13 @@ To test out the live transcription. So far it is only single threaded, so there 
 
 TODO: Use 2 threads, one to produce audio, and one to process audio, and have it communicate through a queue.
 
+To test out segmented recording audio and processing transcriptions sepeartely to generate input data.
+
+For recording audio into .wav files, run
+```bash
+make record-audio
+```
+To process the made .wav files into .txt transcriptions, run
+```bash
+make process-audio
+```

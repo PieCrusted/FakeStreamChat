@@ -43,3 +43,11 @@ test:
 # Run the model for generating chat
 run-model:
 	$(PYTHON) run_model.py --model_dir $(MODEL_DIR)
+
+# Record audio clips
+record-audio:
+	$(PYTHON) segmented_transcription.py record
+
+# Process audio clips into transcriptions
+process-audio:
+	$(PYTHON) segmented_transcription.py process
