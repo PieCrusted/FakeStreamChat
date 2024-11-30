@@ -11,10 +11,27 @@ DATA_DIR := data
 MODEL_DIR := models
 CHECKPOINT_DIR := $(MODEL_DIR)/checkpoints
 
-# Target for installing dependencies
+# Target for installing Python dependencies
 install:
 	$(PYTHON) -m pip install --upgrade pip
 	$(PYTHON) -m pip install -r requirements.txt
+
+# Target for installing dependencies with Homebrew
+install-brew:
+	brew install blackhole-2ch
+	python3 device_select.py
+
+# Target for uninstalling dependencies with Homebrew
+uninstall-brew:
+	brew uninstall blackhole-2ch
+
+# Placeholder for the main Python script
+run-main:
+	@echo "The main Python script does not exist yet. Please implement it."
+
+# Run the transcription script
+run-transcription:
+	$(PYTHON) live_transcription.py
 
 # Combine all JSON files into train.json only
 combine-training-data-only:
@@ -44,10 +61,14 @@ test:
 run-model:
 	$(PYTHON) run_model.py --model_dir $(MODEL_DIR)
 
-# Record audio clips
+# Record audio clips with default (built-in microphone)
 record-audio:
-	$(PYTHON) segmented_transcription.py record
+	$(PYTHON) async_segmented_transcription.py record default
+
+# Record audio clips with virtual (BlackHole microphone)
+virtual-record-audio:
+	$(PYTHON) async_segmented_transcription.py record virtual
 
 # Process audio clips into transcriptions
 process-audio:
-	$(PYTHON) segmented_transcription.py process
+	$(PYTHON) async_segmented_transcription.py process
