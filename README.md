@@ -1,7 +1,7 @@
 # FakeStreamChat
 Creating a basic fake stream chat for my friend group's DnD. The idea is to trascribe audio live, and use a combination of rule based systems and LLM generations to create fake twitch comments.
 
-VERY IMPORTANT NOTE: This is built for mac only, so yeah...
+VERY IMPORTANT NOTE: This is built for intel mac, so yeah...
 
 The project uses OpenAI's Whisper base.en/tiny.en to transcribe audio into text. For text generation, uses RWKV RNN based text generator, as well as a rule based system to take keywords and generate fake text out of it.
 
