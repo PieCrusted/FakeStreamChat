@@ -12,7 +12,9 @@ AUDIO_DIR = "audio_segments"
 TEXT_DIR = "text_transcriptions"
 SAMPLE_RATE = 16000
 CHANNELS = 1  # Mono audio
-CLIP_DURATION = 60  # 1 minute in seconds
+
+# Editable configurations
+CLIP_DURATION = 10  # in seconds
 
 # Signal handler for clean exit during recording
 recording = True
