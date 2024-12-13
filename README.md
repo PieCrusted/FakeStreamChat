@@ -7,6 +7,18 @@ The project uses OpenAI's Whisper base.en/tiny.en to transcribe audio into text.
 
 Note: The project's basis is to run everything locally so we there shouldn't be any costs to money. But because of that, and I have a Intel MacBook Pro, it means the design/libary choices are based around the limited hardware.
 
+TODO/Basic Plan/Parts/Flow Chart:
+
+0. Set a basic UI control that can choose message/minute speeds, and rough macro themes like fighting, or chill npc modes
+1. Record audio transcriptions and transcript audio into text
+2. Send text into 3 different text generation systems
+    1. Use a RNN RWKV model to give contextual responses based off the audio
+    2. Use a rule based system to give spit out pre-made text if certain keywords are detected, like "chat", or "dnd",
+       1. Uses preset theme to adjust the messages
+    3. Use a rule based system to emotes spam, representing the chaotic nature of twitch chat messages
+3. Create pre-made bot names, and output those messages by them
+4. For now, it is ok to output to print, but later on figure out with creating a discord bot and live upload there.
+
 ## Installation
 
 Install the dependencies using the make file
