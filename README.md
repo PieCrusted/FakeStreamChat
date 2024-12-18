@@ -7,17 +7,27 @@ The project uses OpenAI's Whisper base.en/tiny.en to transcribe audio into text.
 
 Note: The project's basis is to run everything locally so we there shouldn't be any costs to money. But because of that, and I have a Intel MacBook Pro, it means the design/libary choices are based around the limited hardware.
 
-TODO/Basic Plan/Parts/Flow Chart:
+#### TODO/Basic Plan/Parts/Flow Chart:
 
-0. Set a basic UI control that can choose message/minute speeds, and rough macro themes like fighting, or chill npc modes
+0. Set a basic UI control that can choose message/minute speeds, and rough macro themes like fighting, or chill talking npc modes
 1. Record audio transcriptions and transcript audio into text
 2. Send text into 3 different text generation systems
     1. Use a RNN RWKV model to give contextual responses based off the audio
-    2. Use a rule based system to give spit out pre-made text if certain keywords are detected, like "chat", or "dnd",
+    2. Use a rule based system to give spit out premade text if certain keywords are detected, like "chat", or "dnd",
        1. Uses preset theme to adjust the messages
     3. Use a rule based system to emotes spam, representing the chaotic nature of twitch chat messages
-3. Create pre-made bot names, and output those messages by them
+3. Create premade bot names, and output those messages by them
 4. For now, it is ok to output to print, but later on figure out with creating a discord bot and live upload there.
+
+#### Extras Plans/Changes:
+Part 0. Mainly have the DM only be able to control some speed gauge or a concurrent viewers gauge, and base multiple functionality out of it
+
+Part 0. If we did it by a speed gauge, we can also extrapolate the number of viewers with some +/- random percentage change. If we did it by number of viewers, we can also extrapolate some made up speed, and have that made up speed control the rest. So really in essence the DM would be able to control 1 gauge and if its the speed or the viewers gauge, it wouldn't matter too much.
+
+Part 2. We can have an additional model similar to the rule based model in which sends preset messages, but have these messages be superchats to force the players to answer the questions/interact with the chat or steers the players into some directions.
+
+Part 3. For the premade usernames, we could have the speed/viewers gauge input dicate how much of the pool it can grab usernames from. For example if there 1 chat per minute then it can grab from a pool of 5 usernames. This should be fairly easy to implemnet where we can take the list of names, randomize the order, and then select the first nth indexes as the pool of names and have the first nth grow as ths speed/viewer gauge increase, and lower n as it drops.
+
 
 ## Installation
 
@@ -66,7 +76,7 @@ make process-audio
 
 If you are on Mac, and you wanted to record audio through the speaker, make sure you do ``make install-brew`` to install Blackhole-2ch and it will list out the full list of accessible so you could change the referenced devices in ``live_transcription.py`` and ``async_segmented_transcription.py`` to the devices of your own.
 
-Additionally do **System Preferences > Sound > Output** and **System Preferences > Sound > Input** and select Blackhole 2ch for each. Just note that you won't be able to hear anything and your sound should be turned up to the max.
+Additionally do **System Preferences > Sound > Output** and **System Preferences > Sound > Input** and select **Blackhole 2ch** for each. Just note that you won't be able to hear anything and your sound should be turned up to the max.
 
 Then you could run 
 ```bash
