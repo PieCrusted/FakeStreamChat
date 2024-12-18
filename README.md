@@ -1,7 +1,7 @@
 # FakeStreamChat
 Creating a basic fake stream chat for my friend group's DnD. The idea is to trascribe audio live, and use a combination of rule based systems and LLM generations to create fake twitch comments.
 
-VERY IMPORTANT NOTE: This is built for intel mac, so yeah...
+VERY IMPORTANT NOTE: This is built for intel mac, so yeah... hardware capabilities are on the weaker side.
 
 The project uses OpenAI's Whisper base.en/tiny.en to transcribe audio into text. For text generation, uses RWKV RNN based text generator, as well as a rule based system to take keywords and generate fake text out of it.
 
@@ -57,7 +57,7 @@ For recording audio into .wav files, run
 ```bash
 make record-audio
 ```
-Note that the audio recording will be in 1 minute clips infinitely until doing Ctrl + C, in which it will continue to finish up recording the last minute it was still working on before stopping the program.
+Note that the audio recording will be in 1 minute clips, or whatever time you set it to, infinitely until doing Ctrl + C, in which it will continue to finish up recording the last minute it was still working on before stopping the program. I've found any audio losses from using very short clips, like 10 seconds long, to be negligible and unable to tell the difference by human ear.
 
 To process the made .wav files into .txt transcriptions, run
 ```bash
