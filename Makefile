@@ -72,3 +72,8 @@ virtual-record-audio:
 # Process audio clips into transcriptions
 process-audio:
 	$(PYTHON) async_segmented_transcription.py process
+
+# Convert transcriptions to JSON
+transcriptions-to-json:
+	$(PYTHON) process_transcriptions_json.py --input_dir text_transcriptions --output_dir transcribed_inputs
+

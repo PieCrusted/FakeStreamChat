@@ -53,7 +53,7 @@ def record_audio(use_blackhole=False):
     os.makedirs(AUDIO_DIR, exist_ok=True)
     clip_index = len(os.listdir(AUDIO_DIR))  # Start naming files from the existing count
 
-    print(f"Recording 1-minute audio clips using {device_name} microphone. Press Ctrl+C to stop.")
+    print(f"Recording {CLIP_DURATION} seconds audio clips using {device_name} microphone. Press Ctrl+C to stop.")
     while recording:
         audio_data = sd.rec(
             int(CLIP_DURATION * SAMPLE_RATE),
