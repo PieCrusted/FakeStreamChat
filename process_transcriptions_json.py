@@ -25,13 +25,12 @@ def qualifier(text, file_name, stats):
     - Reject if words/phrases are excessively repeated.
     """
     if not text:  # Reject empty text
-        stats["empty"] += 1
+        stats["empty"].append({"file_name": file_name, "content": text})
         return False
 
     words = text.split()
     if len(words) > 75:  # Reject excessively long transcriptions
-        stats["excessively_long"] += 1
-        stats["long_files"].append(file_name)
+        stats["excessively_long"].append({"file_name": file_name, "content": text})
         return False
 
     # Check for excessive repetition (simple heuristic: more than 50% of words are the same)
@@ -40,20 +39,17 @@ def qualifier(text, file_name, stats):
         word_counts[word] = word_counts.get(word, 0) + 1
     most_frequent_word = max(word_counts.values())
     if most_frequent_word > len(words) * 0.5:
-        stats["repeated_words"] += 1
-        stats["repeated_files"].append(file_name)
+        stats["repeated_words"].append({"file_name": file_name, "content": text})
         return False
 
     return True
 
 
-def write_json(data, output_directory):
+def write_json(data, output_directory, file_name):
     """
-    Write the processed data into a JSON file in the specified output directory.
-    The JSON file is named with the current date.
+    Write the data into a JSON file in the specified output directory.
     """
     os.makedirs(output_directory, exist_ok=True)
-    file_name = datetime.now().strftime("%Y-%m-%d.json")
     file_path = os.path.join(output_directory, file_name)
     with open(file_path, "w", encoding="utf-8") as json_file:
         json.dump(data, json_file, indent=4, ensure_ascii=False)
@@ -63,28 +59,36 @@ def write_json(data, output_directory):
 def process_transcriptions(input_directory, output_directory):
     """
     Process all text files in the input directory and write qualified inputs to a JSON file.
-    Also, print the rejection statistics.
+    Also, write rejected transcriptions to a separate JSON file.
     """
     texts = read_text_files(input_directory)
     total_files = len(texts)
     processed_data = []
-
-    stats = {
-        "empty": 0,
-        "excessively_long": 0,
-        "repeated_words": 0,
-        "long_files": [],
-        "repeated_files": [],
+    rejection_stats = {
+        "empty": [],
+        "excessively_long": [],
+        "repeated_words": [],
     }
 
     for file_name, text in texts:
-        if qualifier(text, file_name, stats):
+        if qualifier(text, file_name, rejection_stats):
             processed_data.append({
                 "input": text,
                 "output": []
             })
 
-    write_json(processed_data, output_directory)
+    # Write accepted inputs to JSON
+    accepted_file_name = datetime.now().strftime("%Y-%m-%d.json")
+    write_json(processed_data, output_directory, accepted_file_name)
+
+    # Write rejected transcriptions to JSON
+    rejected_file_name = datetime.now().strftime("%Y-%m-%d_rejected.json")
+    rejected_data = {
+        "empty_transcriptions": rejection_stats["empty"],
+        "excessively_long_transcriptions": rejection_stats["excessively_long"],
+        "repeated_words_transcriptions": rejection_stats["repeated_words"],
+    }
+    write_json(rejected_data, output_directory, rejected_file_name)
 
     # Calculate acceptance and rejection rates
     accepted_files = len(processed_data)
@@ -98,18 +102,9 @@ def process_transcriptions(input_directory, output_directory):
     print(f"Accepted files: {accepted_files} ({acceptance_rate:.2f}%)")
     print(f"Rejected files: {rejected_files} ({rejection_rate:.2f}%)")
     print("\nRejection Statistics:")
-    print(f"Empty transcriptions: {stats['empty']}")
-    print(f"Excessively long transcriptions: {stats['excessively_long']}")
-    if stats["long_files"]:
-        print("Files with excessively long transcriptions:")
-        for file_name in stats["long_files"]:
-            print(f"  - {file_name}")
-
-    print(f"Transcriptions with repeated words: {stats['repeated_words']}")
-    if stats["repeated_files"]:
-        print("Files with excessively repeated words:")
-        for file_name in stats["repeated_files"]:
-            print(f"  - {file_name}")
+    print(f"Empty transcriptions: {len(rejection_stats['empty'])}")
+    print(f"Excessively long transcriptions: {len(rejection_stats['excessively_long'])}")
+    print(f"Transcriptions with repeated words: {len(rejection_stats['repeated_words'])}")
 
 
 if __name__ == "__main__":
