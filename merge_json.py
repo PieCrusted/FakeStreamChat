@@ -5,14 +5,27 @@ import random
 import argparse
 
 def merge_and_split_json_files(input_dir, train_file, test_file, test_split=0.2):
-    """Merge JSON files and split into train and test datasets."""
+    """
+    Merges JSON files, splits them into train and test sets, 
+    and handles cases where one input has multiple outputs by creating separate
+    input-output pairs.
+    """
     files = glob.glob(f"{input_dir}/custom/*.json")
     merged_data = []
 
     for file in files:
         with open(file, 'r') as f:
             data = json.load(f)
-            merged_data.extend(data)
+            for item in data:
+                input_text = item.get("input")
+                outputs = item.get("output")
+
+                if isinstance(outputs, list):
+                    for output_text in outputs:
+                        merged_data.append({"input": input_text, "output": output_text})
+                else:
+                     merged_data.append({"input": input_text, "output": outputs})
+
 
     # Shuffle data for random splitting
     random.shuffle(merged_data)

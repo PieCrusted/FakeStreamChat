@@ -39,15 +39,16 @@ combine-training-data-only:
 
 # Combine JSON files into train.json and test.json with a test split
 combine-training-data-test-split:
-ifeq ($(filter-out 0,$(words $(MAKECMDGOALS))),1) # No arguments provided
-	$(PYTHON) merge_json.py --test_split=0.2
-else ifneq ($(filter-out $(MAKECMDGOALS),combine-training-data-test-split),) # Argument provided
-	ifeq ($(shell echo "$(filter-out $(MAKECMDGOALS),combine-training-data-test-split)" | grep -E '^(0(\.[0-9]+)?|1(\.0)?)$$'),)
-		@echo "Error: Split value must be between 0 and 1.0"
-		exit 1
-	endif
-	$(PYTHON) merge_json.py --test_split=$(filter-out $(MAKECMDGOALS),combine-training-data-test-split)
-endif
+	@if test $(words $(MAKECMDGOALS)) -eq 1; then \
+		$(PYTHON) merge_json.py --test_split=0.2; \
+	else \
+		SPLIT_VALUE=$(word 2,$(MAKECMDGOALS)); \
+		if ! echo "$$SPLIT_VALUE" | grep -Eq '^(0(\.[0-9]+)?|1(\.0)?)$$' ; then \
+			echo "Error: Split value must be between 0 and 1.0"; \
+			exit 1; \
+		fi; \
+		$(PYTHON) merge_json.py --test_split=$$SPLIT_VALUE; \
+	fi
 
 # Target to train the RWKV model
 train:

@@ -6,3 +6,5 @@ data/*.json
 base_text_transcriptions/
 json_splitter/*
 transcribed_inputs/*
+models/*
+data/custom/*
