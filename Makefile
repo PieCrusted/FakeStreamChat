@@ -77,3 +77,7 @@ process-audio:
 transcriptions-to-json:
 	$(PYTHON) process_transcriptions_json.py --input_dir text_transcriptions --output_dir transcribed_inputs
 
+# Splits the files in json_splitter/ and splits them into chunks designated in json_splitter.py
+json-split:
+	$(PYTHON) json_splitter.py
+

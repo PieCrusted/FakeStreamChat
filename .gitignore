@@ -4,3 +4,5 @@ text_transcriptions/*
 data/custom/*.json
 data/*.json
 base_text_transcriptions/
+data_split/*
+transcribed_inputs/*
