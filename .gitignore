@@ -8,4 +8,5 @@ json_splitter/*
 transcribed_inputs/*
 models/*
 data/custom/*
-model.py # Placed the RWKV model.py from pip library for better debugging
+ # Placed the RWKV model.py from pip library for better debugging
+model.py
