@@ -52,7 +52,51 @@ combine-training-data-test-split:
 
 # Target to train the RWKV model
 train:
-	$(PYTHON) train_model.py --data_dir $(DATA_DIR) --model_dir $(MODEL_DIR) --checkpoint_dir $(CHECKPOINT_DIR)
+	@if test $(words $(MAKECMDGOALS)) -eq 1; then \
+		$(PYTHON) train_model.py \
+		--data_dir $(DATA_DIR) \
+		--model_dir $(MODEL_DIR) \
+		--checkpoint_dir $(CHECKPOINT_DIR); \
+	else \
+		MODEL_TYPE=$(word 2,$(MAKECMDGOALS)); \
+		EPOCHS=$(word 3,$(MAKECMDGOALS)); \
+		BATCH_SIZE=$(word 4,$(MAKECMDGOALS)); \
+		VOCAB_SIZE=$(word 5,$(MAKECMDGOALS)); \
+		MAX_SEQ_LENGTH=$(word 6,$(MAKECMDGOALS)); \
+		LOAD_MODEL=$(word 7,$(MAKECMDGOALS)); \
+		if [ -z "$$MODEL_TYPE" ]; then MODEL_TYPE="RWKV-4-World"; fi; \
+		if [ -z "$$EPOCHS" ]; then EPOCHS="5"; fi; \
+		if [ -z "$$BATCH_SIZE" ]; then BATCH_SIZE="16"; fi; \
+		if [ -z "$$VOCAB_SIZE" ]; then VOCAB_SIZE="50257"; fi; \
+		if [ -z "$$MAX_SEQ_LENGTH" ]; then MAX_SEQ_LENGTH="256"; fi; \
+		if [ -z "$$LOAD_MODEL" ]; then LOAD_MODEL=""; fi; \
+		if ! echo "$$EPOCHS" | grep -Eq '^[0-9]+$$'; then \
+      		echo "Error: EPOCHS must be an integer value"; \
+      		exit 1; \
+		fi; \
+		if ! echo "$$BATCH_SIZE" | grep -Eq '^[0-9]+$$'; then \
+      		echo "Error: BATCH_SIZE must be an integer value"; \
+      		exit 1; \
+		fi; \
+		if ! echo "$$VOCAB_SIZE" | grep -Eq '^[0-9]+$$'; then \
+			echo "Error: VOCAB_SIZE must be an integer value"; \
+			exit 1; \
+		fi; \
+		if ! echo "$$MAX_SEQ_LENGTH" | grep -Eq '^[0-9]+$$'; then \
+			echo "Error: MAX_SEQ_LENGTH must be an integer value"; \
+			exit 1; \
+		fi; \
+		$(PYTHON) train_model.py \
+		--data_dir $(DATA_DIR) \
+		--model_dir $(MODEL_DIR) \
+		--checkpoint_dir $(CHECKPOINT_DIR) \
+		--model_type $$MODEL_TYPE \
+		--epochs $$EPOCHS \
+		--batch_size $$BATCH_SIZE \
+		--vocab_size $$VOCAB_SIZE \
+		--max_seq_length $$MAX_SEQ_LENGTH \
+		--load_model $$LOAD_MODEL; \
+	fi
 
 # Target to test the RWKV model
 test:
@@ -82,3 +126,5 @@ transcriptions-to-json:
 json-split:
 	$(PYTHON) json_splitter.py
 
+
+	

@@ -5,11 +5,12 @@ numpy
 
 # RWKV model dependencies
 torch  # PyTorch for model training/testing
-transformers  # Utilities for RWKV tokenization and models
-sentencepiece  # Tokenizer for RWKV
+# transformers  # Utilities for RWKV tokenization and models
+# sentencepiece  # Tokenizer for RWKV
 tqdm  # Progress bar for training
 scipy  # Utilities for optimization
 jsonlines  # For handling JSON data in line-based format
+tokenizers # This model should be relatively lightweight
 
 # RWKV-specific library
 rwkv  # Install RWKV Python bindings if not already included
@@ -17,3 +18,5 @@ rwkv  # Install RWKV Python bindings if not already included
 # General-purpose utilities
 pandas  # Data manipulation and analysis
 matplotlib  # Visualization for monitoring training/testing performance
+certifi # For certificate issues when downloading file online
+requests # Also for downloading models online
