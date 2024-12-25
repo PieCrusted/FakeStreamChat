@@ -1,6 +1,6 @@
 # Transcription dependencies
 openai-whisper @ git+https://github.com/openai/whisper.git
-sounddevice
+sounddevice=0.5.1
 numpy
 
 # RWKV model dependencies
@@ -10,10 +10,10 @@ torch  # PyTorch for model training/testing
 tqdm  # Progress bar for training
 scipy  # Utilities for optimization
 jsonlines  # For handling JSON data in line-based format
-tokenizers # This model should be relatively lightweight
+tokenizers=0.20.3 # This model should be relatively lightweight
 
 # RWKV-specific library
-rwkv  # Install RWKV Python bindings if not already included
+rwkv=0.8.28  # Install RWKV Python bindings if not already included
 
 # General-purpose utilities
 pandas  # Data manipulation and analysis

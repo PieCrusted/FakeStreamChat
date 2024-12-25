@@ -135,82 +135,34 @@ def train(data_dir, model_dir, checkpoint_dir, model_type="RWKV-4-World", \
     model_path = download_model(model_type, model_dir) # download the specified model, overwrites dummy file if it exists
     
     # Model Instantiation
+    print(f"Loading Model: model_type={model_type}, strategy={strategy}")
+    model = RWKV(model=model_path, strategy=strategy) # Load model and set model weights
+    
     if load_model:
         try:
-            print(f"Loading model from file {load_model}")
-            loaded_state = torch.load(load_model, map_location=torch.device('cpu'))
-            model = RWKV(model=load_model, strategy=strategy)
-            # model.load_state_dict(loaded_state, strict=False)
-            print(f"Loaded weights from {load_model}")
+          print(f"Loading model from file {load_model}")
+          loaded_state = torch.load(load_model, map_location=torch.device('cpu'))
+          print(f"Loaded weights from {load_model}")
         except FileNotFoundError:
-            print(f"Warning: Pre-trained model file not found at {load_model}, loading default model {model_type}.")
-            loaded_state = torch.load(model_path, map_location=torch.device('cpu'))
-            model = RWKV(model=model_path, strategy=strategy)
-            # model.load_state_dict(loaded_state, strict=False)
+          print(f"Warning: Pre-trained model file not found at {load_model}, loading default model {model_type}.")
+          loaded_state = torch.load(model_path, map_location=torch.device('cpu'))
         except Exception as e:
-            print(f"Warning: Error loading model {e}, loading default model {model_type}")
-            loaded_state = torch.load(model_path, map_location=torch.device('cpu'))
-            model = RWKV(model=model_path, strategy=strategy)
-            # model.load_state_dict(loaded_state, strict=False)
+          print(f"Warning: Error loading model {e}, loading default model {model_type}")
+          loaded_state = torch.load(model_path, map_location=torch.device('cpu'))
     else:
-        print(f"Loading default model {model_type}")
-        loaded_state = torch.load(model_path, map_location=torch.device('cpu'))
-        model = RWKV(model=model_path, strategy=strategy)
-        # model.load_state_dict(loaded_state, strict=False)
-
-    # Debugging: Print parameters before optimizer
-    print("Model parameters:")
-    for name, param in model.named_parameters():
-        print(name, type(param), param.size(), param.requires_grad)
+      print(f"Loading default model {model_type}")
+      loaded_state = torch.load(model_path, map_location=torch.device('cpu'))
 
     # Load State
     model.load_state_dict(loaded_state, strict=False)
-
-    # Setting n_att and n_head
+    # print(loaded_state.keys())
+    
+    # Setting n_head
+    model.args.n_head = head_dim;
     args = model.args
-    args.n_att = loaded_state['blocks.0.att.key.weight'].shape[0]
-    keys = list(loaded_state.keys())
-    # model.version = 4
-    for x in keys:
-       if int(model.version) == 5 and 'att.time_decay' in x:
-           args.n_head = loaded_state[x].shape[0]
-           if len(loaded_state[x].shape) > 1:
-               if loaded_state[x].shape[1] > 1:
-                    model.version = max(5.2, model.version)
-       if 'time_maa' in x:
-           model.version = max(6, self.version)
-       if int(model.version) == 6 and 'time_faaaa' in x:
-           args.n_head = loaded_state[x].shape[0]
+    print(args)
 
     # Optimizer
-    # if not list(model.parameters()):
-    #     print("Error: Model parameters were not loaded correctly.")
-    #     return  # Exit the function if no parameters are fou
-    # # Check if model.parameters is not empty
-    # print(f"Checking model parameters: type(model)={type(model)}")
-    # if not list(model.state_dict()):
-    #     print("Error: Model parameters were not loaded correctly.")
-    #     # print(dir(model))
-    #     # print(model.children())
-
-    #     # print("Checking model named modules:")
-    #     # for name, module in model.named_modules():
-    #     #     print(f"{name}: type(module): {type(module)}")
-    #     #     if hasattr(module, 'parameters'):
-    #     #         for p_name, p in module.named_parameters(recurse = True):
-    #     #             print(f"module {name} parameter name: {p_name} type(parameter):{type(p)} size: {p.size()} requires_grad: {p.requires_grad}")
-    #     # print("Checking the type of the state_dict")
-    #     # print(f"State dict type is {type(loaded_state)}")
-    #     # if isinstance(loaded_state, dict):
-    #     #     for name, param in loaded_state.items():
-    #     #         if isinstance(param, torch.Tensor):
-    #     #             print(f"State dict parameter name: {name}, type(param):{type(param)}, size: {param.size()}")
-    #     #         else:
-    #     #             print(f"State dict parameter name: {name}, type: {type(param)}")
-    # return
-
-    # parameters = [param for param in model.state_dict().values() if isinstance(param, torch.Tensor)]
-
     # Extract parameters from self.w
     parameters = []
     for key, value in model.w.items():
