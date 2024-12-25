@@ -56,7 +56,8 @@ train:
 		$(PYTHON) train_model.py \
 		--data_dir $(DATA_DIR) \
 		--model_dir $(MODEL_DIR) \
-		--checkpoint_dir $(CHECKPOINT_DIR); \
+		--checkpoint_dir $(CHECKPOINT_DIR) \
+		--max_seq_length 769; \
 	else \
 		MODEL_TYPE=$(word 2,$(MAKECMDGOALS)); \
 		EPOCHS=$(word 3,$(MAKECMDGOALS)); \
@@ -127,4 +128,3 @@ json-split:
 	$(PYTHON) json_splitter.py
 
 
-	

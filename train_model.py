@@ -38,6 +38,7 @@ class TextDataset(Dataset):
 
         input_ids = self.tokenizer.encode(input_text).ids
         output_ids = self.tokenizer.encode(output_text).ids
+        target_ids = output_ids
 
         # Combine input and output IDs with a special token
         combined_ids = input_ids + [50256] + output_ids  # Special token to separate input and output
@@ -154,11 +155,11 @@ def train(data_dir, model_dir, checkpoint_dir, model_type="RWKV-4-World", \
       loaded_state = torch.load(model_path, map_location=torch.device('cpu'))
 
     # Load State
-    model.load_state_dict(loaded_state, strict=False)
+    # model.load_state_dict(loaded_state, strict=False)
     # print(loaded_state.keys())
     
     # Setting n_head
-    model.args.n_head = head_dim;
+    model.args.n_head = model.args.n_att // model.args.n_embd;
     args = model.args
     print(args)
 
@@ -183,7 +184,7 @@ def train(data_dir, model_dir, checkpoint_dir, model_type="RWKV-4-World", \
         model.train()
         total_loss = 0
         progress_bar = tqdm(enumerate(data_loader), total=len(data_loader), desc=f"Epoch {epoch + 1}/{epochs}")
-        state = None # Set initial state to None
+        state = None
 
         for batch_idx, (input_ids, target_ids) in progress_bar:
             optimizer.zero_grad()
@@ -191,25 +192,39 @@ def train(data_dir, model_dir, checkpoint_dir, model_type="RWKV-4-World", \
                 B, T = input_ids.size()
                 dev = input_ids.device
                 state = [
-                torch.zeros((args.n_embd), dtype=torch.float, requires_grad=False, device=dev).contiguous(),
-                torch.zeros((args.n_head, args.n_att//args.n_head, args.n_att//args.n_head), dtype=torch.float, requires_grad=False, device=dev).contiguous(),
-                torch.zeros((args.n_att), dtype=torch.float, requires_grad=False, device=dev).contiguous(),
-                torch.zeros((args.n_att), dtype=torch.float, requires_grad=False, device=dev).contiguous(),
-                torch.zeros((args.n_att), dtype=torch.float, requires_grad=False, device=dev).contiguous(),
-                    ]
+                    torch.zeros((T, args.n_embd), dtype=torch.float, requires_grad=False, device=dev).contiguous(),
+                    torch.zeros((args.n_att // args.n_head, args.n_att // args.n_head), dtype=torch.float, requires_grad=False, device=dev).contiguous(),
+                    torch.zeros((T, args.n_att), dtype=torch.float, requires_grad=False, device=dev).contiguous(),
+                    torch.zeros((T, args.n_att), dtype=torch.float, requires_grad=False, device=dev).contiguous(),
+                    torch.zeros((T, args.n_att), dtype=torch.float, requires_grad=False, device=dev).contiguous(),
+                ]
+                # state = [s.detach() for s in state]
+                print("input_ids shape:", input_ids.shape)
+                for idx, s in enumerate(state):
+                    print(f"State[{idx}] shape: {s.shape}")
                 for i in range(args.n_layer):
-                  state += [
-                    torch.zeros((args.n_embd), dtype=torch.float, requires_grad=False, device=dev).contiguous(),
-                    torch.zeros((args.n_head, args.n_att//args.n_head, args.n_att//args.n_head), dtype=torch.float, requires_grad=False, device=dev).contiguous(),
-                    torch.zeros((args.n_att), dtype=torch.float, requires_grad=False, device=dev).contiguous(),
-                    torch.zeros((args.n_att), dtype=torch.float, requires_grad=False, device=dev).contiguous(),
-                    torch.zeros((args.n_att), dtype=torch.float, requires_grad=False, device=dev).contiguous(),
+                    state += [
+                        torch.zeros((T, args.n_embd), dtype=torch.float, requires_grad=False, device=dev).contiguous(),
+                        torch.zeros((args.n_att // args.n_head, args.n_att // args.n_head), dtype=torch.float, requires_grad=False, device=dev).contiguous(),
+                        torch.zeros((T, args.n_att), dtype=torch.float, requires_grad=False, device=dev).contiguous(),
+                        torch.zeros((T, args.n_att), dtype=torch.float, requires_grad=False, device=dev).contiguous(),
+                        torch.zeros((T, args.n_att), dtype=torch.float, requires_grad=False, device=dev).contiguous(),
                     ]
+            # state = [s.detach() for s in state]
             outputs, state = model(input_ids, state)  # model expects inputs as batches
             # Detach state to avoid gradient computation across batches
             state = [s.detach() for s in state]
+            i = 0
+            for idx, s in enumerate(state):
+                print(f"After forward pass {i}: State[{idx}] shape: {s.shape}")
+                i = i + 1
+                print("input_ids shape:", input_ids.shape)
+                for idx, s in enumerate(state):
+                    print(f"State[{idx}] shape: {s.shape}")
 
             # Compute loss and backpropagate
+            print("Outputs shape before transpose:", outputs.shape)
+            print("Target IDs shape:", target_ids.shape)
             loss = F.cross_entropy(outputs.transpose(1, 2), target_ids)
             loss.backward()
             optimizer.step()
