@@ -140,28 +140,47 @@ def train(data_dir, model_dir, checkpoint_dir, model_type="RWKV-4-World", \
             print(f"Loading model from file {load_model}")
             loaded_state = torch.load(load_model, map_location=torch.device('cpu'))
             model = RWKV(model=load_model, strategy=strategy)
-            model.load_state_dict(loaded_state, strict=False)
+            # model.load_state_dict(loaded_state, strict=False)
             print(f"Loaded weights from {load_model}")
         except FileNotFoundError:
             print(f"Warning: Pre-trained model file not found at {load_model}, loading default model {model_type}.")
             loaded_state = torch.load(model_path, map_location=torch.device('cpu'))
             model = RWKV(model=model_path, strategy=strategy)
-            model.load_state_dict(loaded_state, strict=False)
+            # model.load_state_dict(loaded_state, strict=False)
         except Exception as e:
             print(f"Warning: Error loading model {e}, loading default model {model_type}")
             loaded_state = torch.load(model_path, map_location=torch.device('cpu'))
             model = RWKV(model=model_path, strategy=strategy)
-            model.load_state_dict(loaded_state, strict=False)
+            # model.load_state_dict(loaded_state, strict=False)
     else:
         print(f"Loading default model {model_type}")
         loaded_state = torch.load(model_path, map_location=torch.device('cpu'))
         model = RWKV(model=model_path, strategy=strategy)
-        model.load_state_dict(loaded_state, strict=False)
+        # model.load_state_dict(loaded_state, strict=False)
 
     # Debugging: Print parameters before optimizer
     print("Model parameters:")
     for name, param in model.named_parameters():
         print(name, type(param), param.size(), param.requires_grad)
+
+    # Load State
+    model.load_state_dict(loaded_state, strict=False)
+
+    # Setting n_att and n_head
+    args = model.args
+    args.n_att = loaded_state['blocks.0.att.key.weight'].shape[0]
+    keys = list(loaded_state.keys())
+    # model.version = 4
+    for x in keys:
+       if int(model.version) == 5 and 'att.time_decay' in x:
+           args.n_head = loaded_state[x].shape[0]
+           if len(loaded_state[x].shape) > 1:
+               if loaded_state[x].shape[1] > 1:
+                    model.version = max(5.2, model.version)
+       if 'time_maa' in x:
+           model.version = max(6, self.version)
+       if int(model.version) == 6 and 'time_faaaa' in x:
+           args.n_head = loaded_state[x].shape[0]
 
     # Optimizer
     # if not list(model.parameters()):
@@ -212,12 +231,29 @@ def train(data_dir, model_dir, checkpoint_dir, model_type="RWKV-4-World", \
         model.train()
         total_loss = 0
         progress_bar = tqdm(enumerate(data_loader), total=len(data_loader), desc=f"Epoch {epoch + 1}/{epochs}")
-        state = None
+        state = None # Set initial state to None
 
         for batch_idx, (input_ids, target_ids) in progress_bar:
             optimizer.zero_grad()
+            if state is None: # Initial state
+                B, T = input_ids.size()
+                dev = input_ids.device
+                state = [
+                torch.zeros((args.n_embd), dtype=torch.float, requires_grad=False, device=dev).contiguous(),
+                torch.zeros((args.n_head, args.n_att//args.n_head, args.n_att//args.n_head), dtype=torch.float, requires_grad=False, device=dev).contiguous(),
+                torch.zeros((args.n_att), dtype=torch.float, requires_grad=False, device=dev).contiguous(),
+                torch.zeros((args.n_att), dtype=torch.float, requires_grad=False, device=dev).contiguous(),
+                torch.zeros((args.n_att), dtype=torch.float, requires_grad=False, device=dev).contiguous(),
+                    ]
+                for i in range(args.n_layer):
+                  state += [
+                    torch.zeros((args.n_embd), dtype=torch.float, requires_grad=False, device=dev).contiguous(),
+                    torch.zeros((args.n_head, args.n_att//args.n_head, args.n_att//args.n_head), dtype=torch.float, requires_grad=False, device=dev).contiguous(),
+                    torch.zeros((args.n_att), dtype=torch.float, requires_grad=False, device=dev).contiguous(),
+                    torch.zeros((args.n_att), dtype=torch.float, requires_grad=False, device=dev).contiguous(),
+                    torch.zeros((args.n_att), dtype=torch.float, requires_grad=False, device=dev).contiguous(),
+                    ]
             outputs, state = model(input_ids, state)  # model expects inputs as batches
-
             # Detach state to avoid gradient computation across batches
             state = [s.detach() for s in state]
 
@@ -231,7 +267,7 @@ def train(data_dir, model_dir, checkpoint_dir, model_type="RWKV-4-World", \
         print(f"Epoch {epoch + 1}/{epochs}, Average Loss: {total_loss / len(data_loader):.4f}")
 
         if checkpoint_dir:
-            checkpoint_file = os.path.join(checkpoint_dir, f"checkpoint_epoch_{epoch + 1}.pth")
+            checkpoint_file = os.path.join(checkpoint_dir, f"checkpoint_epoch_{epoch+1}.pth")
             torch.save(model.state_dict(), checkpoint_file)
             print(f"Saved checkpoint at {checkpoint_file}")
 
@@ -245,8 +281,8 @@ if __name__ == "__main__":
     parser.add_argument("--data_dir", type=str, required=True, help="Directory for training data")
     parser.add_argument("--model_dir", type=str, required=True, help="Directory to save trained model")
     parser.add_argument("--checkpoint_dir", type=str, default=None, help="Directory to save checkpoints")
-    # parser.add_argument("--model_type", type=str, default="RWKV-4-PilePlus-169M-20230520-done-ctx4096.pth", help="Type of RWKV model")
-    parser.add_argument("--model_type", type=str, default="RWKV-x070-Pile-168M-20241120-ctx4096.pth", help="Type of RWKV model")
+    parser.add_argument("--model_type", type=str, default="RWKV-4-PilePlus-169M-20230520-done-ctx4096.pth", help="Type of RWKV model")
+    # parser.add_argument("--model_type", type=str, default="RWKV-x070-Pile-168M-20241120-ctx4096.pth", help="Type of RWKV model")
     parser.add_argument("--strategy", type=str, default="cpu fp32", help="Strategy to use when creating the model")
     parser.add_argument("--epochs", type=int, default=5, help="Number of training epochs")
     parser.add_argument("--batch_size", type=int, default=16, help="Training batch size")
