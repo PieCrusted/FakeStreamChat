@@ -20,6 +20,7 @@ import numpy as np
 from tqdm import tqdm
 from collections import OrderedDict
 import certifi
+from datetime import datetime
 
 # Custom Dataset Class for RWKV training
 class TextDataset(Dataset):
@@ -214,17 +215,25 @@ def train(data_dir, model_dir, checkpoint_dir, model_type="RWKV-4-World", \
             outputs, state = model(input_ids, state)  # model expects inputs as batches
             # Detach state to avoid gradient computation across batches
             state = [s.detach() for s in state]
-            i = 0
-            for idx, s in enumerate(state):
-                print(f"After forward pass {i}: State[{idx}] shape: {s.shape}")
-                i = i + 1
-                print("input_ids shape:", input_ids.shape)
-                for idx, s in enumerate(state):
-                    print(f"State[{idx}] shape: {s.shape}")
+            # i = 0
+            # for idx, s in enumerate(state):
+            #     print(f"After forward pass {i}: State[{idx}] shape: {s.shape}")
+            #     i = i + 1
+            #     print("input_ids shape:", input_ids.shape)
+            #     for idx, s in enumerate(state):
+            #         print(f"State[{idx}] shape: {s.shape}")
 
             # Compute loss and backpropagate
-            print("Outputs shape before transpose:", outputs.shape)
-            print("Target IDs shape:", target_ids.shape)
+            print("Outputs shape (raw):", outputs.shape)
+            print("Input IDs shape (batch):", input_ids.shape)
+
+            # # Fix output shape
+            # if outputs.dim() == 2:  # Flattened outputs
+            #     batch_size, seq_length = input_ids.size()
+            #     outputs = outputs.view(batch_size, seq_length, 16)
+
+            # Debug fixed shape
+            print("Outputs shape (fixed):", outputs.shape)
             loss = F.cross_entropy(outputs.transpose(1, 2), target_ids)
             loss.backward()
             optimizer.step()
@@ -234,7 +243,8 @@ def train(data_dir, model_dir, checkpoint_dir, model_type="RWKV-4-World", \
         print(f"Epoch {epoch + 1}/{epochs}, Average Loss: {total_loss / len(data_loader):.4f}")
 
         if checkpoint_dir:
-            checkpoint_file = os.path.join(checkpoint_dir, f"checkpoint_epoch_{epoch+1}.pth")
+            date_str = datetime.now().strftime("%m-%d-%Y-%H:%M:%S")
+            checkpoint_file = os.path.join(checkpoint_dir, f"{date_str}_checkpoint_epoch_{epoch+1}.pth")
             torch.save(model.state_dict(), checkpoint_file)
             print(f"Saved checkpoint at {checkpoint_file}")
 
