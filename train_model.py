@@ -176,6 +176,10 @@ def train(data_dir, model_dir, checkpoint_dir, model_type="RWKV-4-World", \
     if not parameters:
         raise ValueError("No trainable parameters found in the model.")
 
+    # Confirm requires_grad=True for backprop training
+    for param in parameters:
+        print(param.requires_grad)
+
     # Create optimizer
     optimizer = optim.AdamW(parameters, lr=learning_rate)
 
@@ -189,57 +193,40 @@ def train(data_dir, model_dir, checkpoint_dir, model_type="RWKV-4-World", \
 
         for batch_idx, (input_ids, target_ids) in progress_bar:
             optimizer.zero_grad()
-            if state is None: # Initial state
+            if state is None:  # Initial state
                 B, T = input_ids.size()
                 dev = input_ids.device
-                state = [
-                    torch.zeros((T, args.n_embd), dtype=torch.float, requires_grad=False, device=dev).contiguous(),
-                    torch.zeros((args.n_att // args.n_head, args.n_att // args.n_head), dtype=torch.float, requires_grad=False, device=dev).contiguous(),
-                    torch.zeros((T, args.n_att), dtype=torch.float, requires_grad=False, device=dev).contiguous(),
-                    torch.zeros((T, args.n_att), dtype=torch.float, requires_grad=False, device=dev).contiguous(),
-                    torch.zeros((T, args.n_att), dtype=torch.float, requires_grad=False, device=dev).contiguous(),
-                ]
-                # state = [s.detach() for s in state]
-                print("input_ids shape:", input_ids.shape)
-                for idx, s in enumerate(state):
-                    print(f"State[{idx}] shape: {s.shape}")
-                for i in range(args.n_layer):
-                    state += [
+                state = []
+                for _ in range(args.n_layer):
+                    state.extend([
                         torch.zeros((T, args.n_embd), dtype=torch.float, requires_grad=False, device=dev).contiguous(),
-                        torch.zeros((args.n_att // args.n_head, args.n_att // args.n_head), dtype=torch.float, requires_grad=False, device=dev).contiguous(),
+                        torch.zeros((args.n_head, args.n_att // args.n_head, args.n_att // args.n_head), dtype=torch.float, requires_grad=False, device=dev).contiguous(),
                         torch.zeros((T, args.n_att), dtype=torch.float, requires_grad=False, device=dev).contiguous(),
                         torch.zeros((T, args.n_att), dtype=torch.float, requires_grad=False, device=dev).contiguous(),
                         torch.zeros((T, args.n_att), dtype=torch.float, requires_grad=False, device=dev).contiguous(),
-                    ]
-            # state = [s.detach() for s in state]
-            outputs, state = model(input_ids, state)  # model expects inputs as batches
-            # Detach state to avoid gradient computation across batches
-            state = [s.detach() for s in state]
-            # i = 0
-            # for idx, s in enumerate(state):
-            #     print(f"After forward pass {i}: State[{idx}] shape: {s.shape}")
-            #     i = i + 1
-            #     print("input_ids shape:", input_ids.shape)
-            #     for idx, s in enumerate(state):
-            #         print(f"State[{idx}] shape: {s.shape}")
+                    ])
+                print(f"Initialized state with {len(state)} tensors.")
 
-            # Compute loss and backpropagate
-            print("Outputs shape (raw):", outputs.shape)
-            print("Input IDs shape (batch):", input_ids.shape)
+            # Process each sequence in the batch individually
+            batch_outputs = []
+            for i in range(input_ids.size(0)):  # Iterate over the batch
+                single_input = input_ids[i].unsqueeze(0)  # Add batch dimension
+                single_output, state = model(single_input, state)
+                batch_outputs.append(single_output)
 
-            # # Fix output shape
-            # if outputs.dim() == 2:  # Flattened outputs
-            #     batch_size, seq_length = input_ids.size()
-            #     outputs = outputs.view(batch_size, seq_length, 16)
+            # Combine outputs into a single tensor
+            outputs = torch.cat(batch_outputs, dim=0)  # Combine along batch dimension
+            print("Outputs shape (batched):", outputs.shape)
+            print("Outputs grad_fn:", outputs.grad_fn)
 
-            # Debug fixed shape
-            print("Outputs shape (fixed):", outputs.shape)
+            # Compute loss
             loss = F.cross_entropy(outputs.transpose(1, 2), target_ids)
             loss.backward()
             optimizer.step()
 
             total_loss += loss.item()
             progress_bar.set_postfix({"loss": f"{loss.item():.4f}"})
+
         print(f"Epoch {epoch + 1}/{epochs}, Average Loss: {total_loss / len(data_loader):.4f}")
 
         if checkpoint_dir:
@@ -250,6 +237,7 @@ def train(data_dir, model_dir, checkpoint_dir, model_type="RWKV-4-World", \
 
     torch.save(model.state_dict(), model_path)
     print("Training complete. Model saved at:", model_path)
+
 
 
 if __name__ == "__main__":
