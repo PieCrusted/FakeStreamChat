@@ -2,6 +2,9 @@ import os
 import json
 from datetime import datetime
 
+# Editable Constants
+MAX_LENGTH = 75 # Arbitraily choosing 75 for 10 seconds, adjust for recording length
+MAX_FREQ = 0.5
 
 def read_text_files(directory):
     """
@@ -29,7 +32,7 @@ def qualifier(text, file_name, stats):
         return False
 
     words = text.split()
-    if len(words) > 75:  # Reject excessively long transcriptions
+    if len(words) > MAX_LENGTH:  # Reject excessively long transcriptions
         stats["excessively_long"].append({"file_name": file_name, "content": text})
         return False
 
@@ -38,7 +41,7 @@ def qualifier(text, file_name, stats):
     for word in words:
         word_counts[word] = word_counts.get(word, 0) + 1
     most_frequent_word = max(word_counts.values())
-    if most_frequent_word > len(words) * 0.5:
+    if most_frequent_word > len(words) * MAX_FREQ:
         stats["repeated_words"].append({"file_name": file_name, "content": text})
         return False
 
