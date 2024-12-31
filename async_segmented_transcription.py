@@ -7,6 +7,9 @@ import whisper
 import signal
 import argparse
 
+# Ours
+import TextCleaner
+
 # Constants
 AUDIO_DIR = "audio_segments"
 TEXT_DIR = "text_transcriptions"
@@ -75,7 +78,7 @@ def record_audio(use_blackhole=False):
         print(f"Saved: {filename}")
         clip_index += 1
 
-
+cleaner = TextCleaner.TextCleaner()
 def process_audio():
     """
     Process WAV files into text transcriptions using Whisper.
@@ -92,7 +95,10 @@ def process_audio():
     for audio_file in audio_files:
         audio_path = os.path.join(AUDIO_DIR, audio_file)
         print(f"Transcribing: {audio_path}")
-        result = model.transcribe(audio_path)
+        text = model.transcribe(audio_path)
+
+        # Clean Text with text Cleaner
+        result = cleaner.clean_text(text)
 
         # Save the transcription to a text file
         text_filename = os.path.join(TEXT_DIR, f"{os.path.splitext(audio_file)[0]}.txt")

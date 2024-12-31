@@ -127,4 +127,8 @@ transcriptions-to-json:
 json-split:
 	$(PYTHON) json_splitter.py
 
+# Test out TextCleaner.py
+text-clean:
+	$(PYTHON) TextCleaner.py
+
 
