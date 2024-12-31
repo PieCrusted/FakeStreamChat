@@ -1,9 +1,11 @@
 # FakeStreamChat
 Creating a basic fake stream chat for my friend group's DnD. The idea is to trascribe audio live, and use a combination of rule based systems and LLM generations to create fake twitch comments.
 
-VERY IMPORTANT NOTE: This is built for intel mac, so yeah... hardware capabilities are on the weaker side.
+Also putting a really detailed README since I blanked out on a few past interviews where I could barely recall what I did.
 
-The project uses OpenAI's Whisper base.en/tiny.en to transcribe audio into text. For text generation, uses RWKV RNN based text generator, as well as a rule based system to take keywords and generate fake text out of it.
+VERY IMPORTANT NOTE: This is built for intel mac, so yeah... hardware capabilities and considerations are on the weaker side.
+
+The project uses OpenAI's Whisper base.en/base.en to transcribe audio into text. For text generation, uses RWKV RNN based text generator, as well as a rule based system to take keywords and generate fake text out of it.
 
 Note: The project's basis is to run everything locally so we there shouldn't be any costs to money. But because of that, and I have a Intel MacBook Pro, it means the design/libary choices are based around the limited hardware.
 
@@ -48,7 +50,7 @@ make combine-training-data-test-split 0.3
 ```
 The first command combines all the jsons in ```data/custom``` to ```data/train.json```
 
-The second and third command combines and splits the jsons in ```data/custom``` to ```data/train.json``` and ```data/test.json```. It can take an specified argument between 0 to 1.0, where the argument is denoted as the percentage put into ```data/test.json```.
+The second and third command combines and splits the jsons in ```data/custom``` to ```data/train.json``` and ```data/test.json```. It can take an specified argument at between 0 to 1.0, where the argument is denoted as the percentage put into ```data/test.json```.
 
 ## Component Testing
 
@@ -87,3 +89,70 @@ to use the speakers to record audio into .wav files and still do the same
 make process-audio
 ```
 to process the audio into transcriptions.
+
+### TODO: Might remove this section of Component Testing
+
+## Data Gathering
+
+To gather data, I directly used our Discord DnD session to gather the inputs and then found that Google's AI Studio (surveyed and found best to worst Google AI Studio > Blackbox AI, ChatGPT) was best at generating potential contextual chat messages. To gather the data, follow the steps below:
+
+1. Record audio clips live while in the session, preferably use a virtual microphone so that it can connect the speaker directly to microphone for high quality audio.
+
+Use this if you are using the default computer (well more technically only MacOS since I kinda gave up on considering both Windows and Linux) microphone and is using another physical source to feed into the microphone.
+```bash
+make record-audio
+```
+Or if you want to record audio using the speaker, then do  ``make install-brew`` to install Blackhole-2ch and it will list out the full list of accessible so you could change the referenced devices in ``live_transcription.py`` and ``async_segmented_transcription.py`` to the devices of your own.
+
+Additionally do **System Preferences > Sound > Output** and **System Preferences > Sound > Input** and select **Blackhole 2ch** for each. Just note that you won't be able to hear anything and your sound should be turned up to the max.
+
+Then you could run 
+```bash
+make virtual-record-audio
+```
+
+Both of these options will then live record clips as designated and create wav files in a specificed directory. Note that the audio recording will be in 10 second clips, or whatever time you set it to, infinitely until doing Ctrl + C, in which it will continue to finish up recording the last minute it was still working on before stopping the program. I've found any audio losses from using very short clips, like 10 seconds long, to be negligible and unable to tell the difference by human ear.
+
+Also note that I might be refering to 10 seconds here and there, but I recommend doing 20 or 30 seconds because as I learned from tuning in a DnD game was that DnD was ridiculously slow, and audio/audio transcriptions were the most messed up on instances where there was little actual talking and lots of muffle noises.
+
+2. Transcribe all the audio using OpenAI's Whisper and run it through a basic RegEx to remove various filler words. The filler words selected can be adjusted in ``TextCleaner.py``.
+
+Run 
+```bash
+make process-audio
+```
+and it will then create txt files in another directory based on the wav files from the previous step. Just note, it will put a lot of spam in Terminal about unable to use FP16 in CPU which I thought of removing, but then decided against it so I can easily see the progress.
+
+3. Process the individual text transcriptions with ``process_transcriptions_json.py`` and edit the various constants like max length or frequency percentage to make changes to the qualifier and sort out the passed and rejected json files. 
+
+Run
+```bash
+make transcriptions-to-json
+```
+And it will sort out the accepted and rejected text into another directory. It will create 2 files named with todays date except one will say rejected in it for rejected inputs for manual review and the other one will be on accepted text. It will also print out simple statistics on the total accepted/rejected percentages and the rejections of each type.
+
+4. Split the big json file into many small ones with ``json_splitter.py``. Even though Google's AI Studio has like a 1 million token limit, it's still limited to like 8192 token outputs, so it can't generate for all the text. I found that for 10 second clips, even 100 inputs (and generating 4 outputs) was too much, so adjust from there. I also roughly played around with 0.75, 1, 1.25, 2 Temperatures found a Temperature of 1 or 1.25 seemed most decent for the outputs.
+
+Use
+```bash
+make json-split
+```
+To split the massive json file into smaller ones. This is mainly if you want easily break down for easier manual work, like distributing this labor work with the DnD game's Dungeon Master *cough* *cough* *Daniel if you're reasing this*
+
+5. Move all the completed input output pair json files into the data directory. They can be all separate files and have multiple outputs to a single input. Then either use ``merge_train_json.py`` or ``merge_json.py`` which will break apart the single input and multiple output pairs in all the provided json files and move it into a single file. The difference is that ``merge_train_json.py`` moves everything into the train.json while ``merge_json.py`` will randomly sort and distribute based on a passed percentage into train.json and test.json.
+
+Prepare data in ```data/custom``` folder, in json format. Then run either:
+```bash
+make combine-training-data-only
+```
+```bash
+make combine-training-data-test-split
+```
+```bash
+make combine-training-data-test-split 0.3
+```
+The first command combines all the jsons in ```data/custom``` to ```data/train.json```
+
+The second and third command combines and splits the jsons in ```data/custom``` to ```data/train.json``` and ```data/test.json```. It can take an specified argument at between 0 to 1.0, where the argument is denoted as the percentage put into ```data/test.json```.
+
+
