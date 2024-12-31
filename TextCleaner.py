@@ -3,7 +3,8 @@ import re
 class TextCleaner:
     def __init__(self):
         # Define filler words to remove
-        self.filler_words = ["um", "uh", "uhm", "uhh", "err", "ah"]
+        # Intentionally doing "oh," to not mess up like "oh no" usage
+        self.filler_words = ["um", "uh", "uhm", "uhh", "err", "ah", "huh", "oh wait,", "Oh wait,", "oh,"]
 
     def clean_text(self, text):
         """

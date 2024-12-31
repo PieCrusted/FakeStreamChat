@@ -95,15 +95,15 @@ def process_audio():
     for audio_file in audio_files:
         audio_path = os.path.join(AUDIO_DIR, audio_file)
         print(f"Transcribing: {audio_path}")
-        text = model.transcribe(audio_path)
+        result = model.transcribe(audio_path)
 
         # Clean Text with text Cleaner
-        result = cleaner.clean_text(text)
+        text = cleaner.clean_text(result['text'])
 
         # Save the transcription to a text file
         text_filename = os.path.join(TEXT_DIR, f"{os.path.splitext(audio_file)[0]}.txt")
         with open(text_filename, 'w') as text_file:
-            text_file.write(result['text'])
+            text_file.write(text)
         
         print(f"Saved transcription: {text_filename}")
 
