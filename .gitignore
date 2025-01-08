@@ -1,14 +1,23 @@
 .DS_Store
 audio_segments/*
+!audio_segments/.gitkeep
 text_transcriptions/*
-data/custom/*.json
+!text_transcriptions/.gitkeep
+data/custom/*
+!data/custom/.gitkeep
 data/*.json
+!data/.gitkeep
+
 base_text_transcriptions/
 json_splitter/*
+!json_splitter/.gitkeep
 transcribed_inputs/*
-models/*
-data/custom/*
+!transcribed_inputs/.gitkeep
+models/*.pth
+!models/.gitkeep
+models/checkpoints/*
+!models/checkpoints/.gitkeep
+
  # Placed the RWKV model.py from pip library for better debugging
 model.py
 __pycache__/
-json_splitter/*
