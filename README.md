@@ -131,7 +131,7 @@ make transcriptions-to-json
 ```
 And it will sort out the accepted and rejected text into another directory. It will create 2 files named with todays date except one will say rejected in it for rejected inputs for manual review and the other one will be on accepted text. It will also print out simple statistics on the total accepted/rejected percentages and the rejections of each type.
 
-4. Split the big json file into many small ones with ``json_splitter.py``. Even though Google's AI Studio has like a 1 million token limit, it's still limited to like 8192 token outputs, so it can't generate for all the text. I found that for 10 second clips, even 100 inputs (and generating 4 outputs) was too much, so adjust from there. I also roughly played around with 0.75, 1, 1.25, 2 Temperatures found a Temperature of 1 or 1.25 seemed most decent for the outputs.
+4. Move the big json (and any other json files) file into ``json_splitter/``. Make it into many small json files with ``json_splitter.py``. Even though Google's AI Studio has like a 1 million token limit, it's still limited to like 8192 token outputs, so it can't generate for all the text. I found that for 10 second clips, even 100 inputs (and generating 4 outputs) was too much, so adjust from there. I also roughly played around with 0.75, 1, 1.25, 2 Temperatures found a Temperature of 1 or 1.25 seemed most decent for the outputs.
 
 Use
 ```bash
