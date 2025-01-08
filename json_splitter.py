@@ -5,7 +5,7 @@ from datetime import datetime
 # Constants
 INPUT_DIRECTORY = "json_splitter/"
 OUTPUT_DIRECTORY = "json_splitter/split/"
-SPLIT_SIZE = 100  # Number of items per split file
+SPLIT_SIZE = 50  # Number of items per split file
 
 # Ensure output directory exists
 os.makedirs(OUTPUT_DIRECTORY, exist_ok=True)

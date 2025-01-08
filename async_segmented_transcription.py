@@ -17,7 +17,7 @@ SAMPLE_RATE = 16000
 CHANNELS = 1  # Mono audio
 
 # Editable configurations
-CLIP_DURATION = 10  # in seconds
+CLIP_DURATION = 20  # in seconds
 
 # Signal handler for clean exit during recording
 recording = True

@@ -19,7 +19,7 @@ model = whisper.load_model("base.en", device="cpu")  # Change to "tiny" if neede
 
 # Audio settings
 SAMPLE_RATE = 16000
-CHUNK_DURATION = 5  # seconds
+CHUNK_DURATION = 20  # seconds
 QUEUE_MAX_SIZE = 10 
 
 # Shared queue

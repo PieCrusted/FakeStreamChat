@@ -3,7 +3,7 @@ import json
 from datetime import datetime
 
 # Editable Constants
-MAX_LENGTH = 75 # Arbitraily choosing 75 for 10 seconds, adjust for recording length
+MAX_LENGTH = 90 # Arbitraily choosing 90 for 20 sec because DnD is slow.
 MAX_FREQ = 0.5
 
 def read_text_files(directory):

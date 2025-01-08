@@ -11,3 +11,4 @@ data/custom/*
  # Placed the RWKV model.py from pip library for better debugging
 model.py
 __pycache__/
+json_splitter/*
