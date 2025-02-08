@@ -10,6 +10,7 @@ PYTHON := python3
 DATA_DIR := data
 MODEL_DIR := models
 CHECKPOINT_DIR := $(MODEL_DIR)/checkpoints
+EMOTE_FILE := $(DATA_DIR)/emotes.txt
 
 # Target for installing Python dependencies
 install:
@@ -131,4 +132,16 @@ json-split:
 text-clean:
 	$(PYTHON) TextCleaner.py
 
+# Test out Systematic Emote Spammer
+systematic-emote-spam:
+	@if [ "$(word 2, $(MAKECMDGOALS))" = "" ]; then \
+		python3 systematic_emote_spam.py $(EMOTE_FILE); \
+	elif [ "$(word 3, $(MAKECMDGOALS))" = "" ]; then \
+		python3 systematic_emote_spam.py $(EMOTE_FILE) 3 3 3 $(word 2, $(MAKECMDGOALS)); \
+	elif [ "$(word 5, $(MAKECMDGOALS))" != "" ]; then \
+		python3 systematic_emote_spam.py $(EMOTE_FILE) $(word 2, $(MAKECMDGOALS)) $(word 3, $(MAKECMDGOALS)) $(word 4, $(MAKECMDGOALS)) $(word 5, $(MAKECMDGOALS)); \
+	else \
+		python3 systematic_emote_spam.py $(EMOTE_FILE) 3 3 3 1; \
+	fi
+	@true
 
